@@ -85,7 +85,11 @@ input,button, select, textarea, label{
 }
 /*end of part 0----------------------------------------------------*/
 
-
+:root {
+	--color-primary: #eb1d24;
+	/* #2f57ef */
+	--color-secondary: #192335;
+}
 
 /*-------------------------------------------------------------------
 [1. Body]
@@ -159,6 +163,7 @@ nav.menu{
 .image-round{
 	width: 100px;
 	height: 100px;
+	 border-radius: 50%;
 }
 nav.menu .nav-header span{
 	display: block;
@@ -174,7 +179,7 @@ nav.menu .nav-header{
 	height: 170px;
 	text-align: center;
 	padding: 10px 0;
-	background:url("../img/avatar-bg.jpg") no-repeat right;
+	background:url("../img/avatar-bg.webp") no-repeat right;
 }
 
 nav .nav-container{
@@ -439,7 +444,7 @@ header{
 	top: 0;
 	left: 0;
 	right: 0;
-	background-image: linear-gradient(to left, #005bea 0%, #0db2de 100%);
+	background-image: linear-gradient(218.15deg, var(--color-secondary) 0%, var(--color-primary) 100%);
 	height: 50px;
 	border-bottom:solid 1px #EEE;
 	padding: 10px;
