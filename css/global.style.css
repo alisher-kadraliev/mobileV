@@ -1108,7 +1108,7 @@ select.form-element {
 }
 
 .expandable-header .list-title {
-	font-size: 16px;
+	font-size: 13px;
 	line-height: 18px;
 	padding-left: 70px;
 	margin: 0;
@@ -1647,8 +1647,10 @@ select.form-element {
 	display: block;
 	width: 100%;
 	clear: both;
+	font-size:16px;
 	height: 1px;
 	background-color: #DDD;
+	
 	text-align: center;
 	opacity: 0.5;
 }
@@ -1658,7 +1660,8 @@ select.form-element {
 	top: -8px;
 	font-weight: 700;
 	display: inline-block;
-	background-color: #F5F6F8;
+	background-color: white;
+	color:var(--color-secondary)!important;
 	padding: 0 10px;
 }
 
@@ -2860,6 +2863,7 @@ select.form-element {
 .panel .title {
 	margin: 0;
 	padding: 0;
+	font-size: 16px;
 }
 
 /*end of part 22----------------------------------------------------*/
@@ -4013,6 +4017,12 @@ margin-bottom: 40px;
 	white-space: nowrap;
 	font-weight: 700;
 }
+.sm-button{
+	font-size: 13px;
+}
+.text{
+	font-size: 12px;
+}
 }
 .row-mob {
 	display: flex;
@@ -4049,4 +4059,17 @@ margin-bottom: 40px;
 }
 .footer-social{
 	font-size: 18px;
+}
+.form-row i{
+	font-size: 14px;
+}
+input::placeholder {
+    color: var(--color-gray-light); /* Change this color to your desired placeholder color */
+}
+textarea::placeholder {
+    color: var(--color-gray-light); /* Change this color to your desired placeholder color */
+}
+.about-text
+{
+	margin-top: 15px;
 }
