@@ -103,6 +103,7 @@ label {
 
 :root {
 	--color-primary: #eb1d24;
+	--color-primary-light: #fa2d2d;
 	/* #2f57ef */
 	--color-secondary: #192335;
 	--color-gray: #f7f9fa;
@@ -346,7 +347,7 @@ nav.menu ul.main-menu>li li a {
 
 .c-btn {
 	padding: 8px 15px;
-	background: #ff7854;
+	background: var(--color-primary-light);
 	color: #fff;
 	text-align: center;
 	display: inline-block;
@@ -3924,5 +3925,17 @@ margin-bottom: 40px;
 		margin: 0;
 		font-weight: 600;
 		font-size: 12px;
+	}
+	.c-btn {
+		padding: 8px 15px;
+		background: var(--color-primary-light);
+		color: #fff;
+		text-align: center;
+		display: inline-block;
+		border-radius: 5px;
+		font-size: 15px;
+	}
+	.main-menu a{
+		font-size: 14px;
 	}
 }
