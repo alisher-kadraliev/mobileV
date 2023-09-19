@@ -343,6 +343,7 @@ nav.menu ul.main-menu>li li a {
 	color: #13287e
 }
 
+
 .c-btn {
 	padding: 8px 15px;
 	background: #ff7854;
@@ -489,8 +490,9 @@ nav.menu ul.main-menu>li li a {
 }
 
 .b-text {
-	color: #13287e !important
+	color: var(--color-gray-side) !important
 }
+
 
 .inst-card {
 	background: #0f4198;
@@ -3873,4 +3875,54 @@ margin-bottom: 40px;
 .swiper {
     width: 100%; /* Set the width of the container as needed */
     overflow: hidden; /* Ensure that content doesn't overflow */
+}
+.header-img{
+	width: 60%;
+    height: auto;
+    max-width: 100%;
+}
+.c-btn.head-btn {
+	padding: 8px 15px;
+	background: var(--color-primary);
+	color: #fff;
+	font-size: 13px;
+	text-align: center;
+	display: inline-block;
+	border-radius: 5px;
+}
+@media (max-width:374px) {
+	.b-text {
+		font-size: 13px;
+	}
+	.course-sub-text{
+		font-size: 11px;
+	}
+	.banner-head {
+		margin-top: 0;
+		font-size: 13px;
+		font-weight: 700;
+		color: var(--color-gray-side)
+	}
+	body {
+		margin: 0;
+		padding: 0;
+		background-color: #FFF;
+		font-family: Lexend, sans-serif;
+		font-size: 9px;
+		color: #4f4f67;
+		line-height: 1.4;
+		font-weight: 400;
+		box-sizing: border-box;
+		-webkit-font-smoothing: antialiased;
+	}
+	
+	.product-item .product-price {
+		font-size: 10px;
+		line-height: 30px;
+	}
+	.courses-name {
+		margin: 0;
+		font-weight: 600;
+		font-size: 12px;
+	}
 }
