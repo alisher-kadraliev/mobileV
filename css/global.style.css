@@ -2497,7 +2497,7 @@ select.form-element {
 	-o-text-overflow: ellipsis;
 	-ms-text-overflow: ellipsis;
 	white-space: nowrap;
-	color: #13287e;
+	color: var(--color-gray-side);
 	font-weight: 700;
 }
 
@@ -3761,6 +3761,7 @@ a.rbt-btn-link::after {
 
 /* header */
 .header_bottom {
+	position: relative;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -3873,6 +3874,59 @@ margin-bottom: 40px;
 	opacity: 1;
 	transition: all .3s;
 }
+.custom-pagination-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	margin-top: 10px;
+}
+
+.custom-pagination-3 .swiper-pagination-bullet {
+    width: 11px; /* Adjust bullet size */
+    height: 11px; /* Adjust bullet size */
+    margin: 0 5px; /* Adjust spacing between bullets */
+    background-color: var(--color-gray-side); /* Change to your desired color */
+    border-radius:10px; /* Creates circular bullets */
+    cursor: pointer;
+	opacity: .2;
+	transition: all .3s;
+}
+
+/* Active bullet style */
+.custom-pagination-3 .swiper-pagination-bullet-active {
+    background-color: var(--color-primary); /* Change to your desired active color */
+	width: 40px; /* Adjust bullet size */
+    height: 11px; /* Adjust bullet size */
+	opacity: 1;
+	transition: all .3s;
+}
+.custom-pagination-4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-direction: column;
+	margin-top: 10px;
+}
+
+.custom-pagination-4 .swiper-pagination-bullet {
+    width: 11px; /* Adjust bullet size */
+    height: 29px; /* Adjust bullet size */
+    margin: 10px 5px; /* Adjust spacing between bullets */
+    background-color: var(--color-gray-side); /* Change to your desired color */
+    border-radius:10px; /* Creates circular bullets */
+    cursor: pointer;
+	opacity: .2;
+	transition: all .3s;
+}
+
+/* Active bullet style */
+.custom-pagination-4 .swiper-pagination-bullet-active {
+    background-color: var(--color-primary); /* Change to your desired active color */
+	width: 11px; /* Adjust bullet size */
+    height: 50px; /* Adjust bullet size */
+	opacity: 1;
+	transition: all .3s;
+}
 .swiper {
     width: 100%; /* Set the width of the container as needed */
     overflow: hidden; /* Ensure that content doesn't overflow */
@@ -3891,6 +3945,8 @@ margin-bottom: 40px;
 	display: inline-block;
 	border-radius: 5px;
 }
+
+
 @media (max-width:374px) {
 	.b-text {
 		font-size: 13px;
@@ -3938,4 +3994,59 @@ margin-bottom: 40px;
 	.main-menu a{
 		font-size: 14px;
 	}
+	
+.product-item .old-price {
+	opacity: 0.7;
+	margin-left: 2px;
+	text-decoration: line-through;
+}
+.product-item .product-title {
+	display: block;
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+	padding: 10px 10px 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	-ms-text-overflow: ellipsis;
+	white-space: nowrap;
+	font-weight: 700;
+}
+}
+.row-mob {
+	display: flex;
+	flex-direction: column;
+}
+
+.row-mob-item {
+	display: flex;
+	flex-wrap: nowrap;
+
+}
+.row-haber{
+	display: flex;
+}
+.col-10-haber{
+	width: 90%;
+}
+.col-2-haber{
+	width: 10%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.haber-items{
+	display: flex;
+	flex-direction: column;
+}
+.haber-item{
+	display: flex;
+}
+.swiper-four{
+	height: 450px;
+	max-height: 450px;
+}
+.footer-social{
+	font-size: 18px;
 }

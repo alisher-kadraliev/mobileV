@@ -250,7 +250,34 @@ let swiper2 = new Swiper(".swiper-second", {
 		clickable: true,
 	},
 });
-
+let swiper3 = new Swiper(".swiper-third", {
+	slidesPerView: 1,
+	spaceBetween: 15,
+	loop: true,
+	autoplay: {
+		delay: 50000,
+		disableOnInteraction: true,
+	},
+	pagination: {
+		el: ".custom-pagination-3",
+		clickable: true,
+	},
+});
+let swiper4 = new Swiper(".swiper-four", {
+	direction: "vertical",
+	slidesPerView: 1,
+	spaceBetween: 5,
+	freeMode: true,
+	loop: true,
+	autoplay: {
+		delay: 5000,
+		disableOnInteraction: true,
+	},
+	pagination: {
+		el: ".custom-pagination-4",
+		clickable: true,
+	},
+});
 
 // Get references to the close buttons and elements
 var closeButtons = document.querySelectorAll('.header_top_close');
