@@ -225,6 +225,7 @@ $(document).on('click', '[data-search="close"]', function () {
 //swiper-1
 let mySwiper = new Swiper('.swiper-first', {
 	direction: 'horizontal',
+	spaceBetween: 30,
 	loop: true,
 	autoplay: {
 		delay: 5000,
