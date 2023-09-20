@@ -228,8 +228,8 @@ let mySwiper = new Swiper('.swiper-first', {
 	spaceBetween: 30,
 	loop: true,
 	autoplay: {
-		delay: 5000,
-		disableOnInteraction: false,
+		delay: 2500,
+		disableOnInteraction: true,
 	},
 	pagination: {
 		el: '.custom-pagination', // Use your custom pagination selector
@@ -237,6 +237,7 @@ let mySwiper = new Swiper('.swiper-first', {
 	},
 
 });
+
 //second slide
 let swiper2 = new Swiper(".swiper-second", {
 	slidesPerView: 1,
@@ -279,6 +280,32 @@ let swiper4 = new Swiper(".swiper-four", {
 		clickable: true,
 	},
 });
+let swiper5 = new Swiper('.swiper-five', {
+	direction: 'horizontal',
+	slidesPerView: 2,
+	spaceBetween: 15,
+	loop: true,
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: true,
+	},
+	pagination: {
+		el: '.custom-pagination-5', // Use your custom pagination selector
+		clickable: true, // Enable bullet click
+	},
+
+});
+const control = document.getElementById("direction-toggle");
+const marquees = document.querySelectorAll(".marquee");
+const wrapper = document.querySelector(".wrapper");
+
+control.addEventListener("click", () => {
+  control.classList.toggle("toggle--vertical");
+  wrapper.classList.toggle("wrapper--vertical");
+  [...marquees].forEach((marquee) =>
+    marquee.classList.toggle("marquee--vertical")
+  );
+});
 
 // Get references to the close buttons and elements
 var closeButtons = document.querySelectorAll('.header_top_close');
@@ -311,3 +338,17 @@ function googleTranslateElementInit() {
 	new google.translate.TranslateElement({ pageLanguage: 'tr', includedLanguages: 'ar,en,tr,fr,de,ru', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
 }
 
+// swiperEl.addEventListener('mouseenter', function(event) {
+	document.addEventListener('mouseenter', event => {
+		const el = event.target;
+		if (el && el.matches && el.matches('.swiper-container')) {
+			// console.log('mouseenter');
+			// console.log('autoplay running', swiper.autoplay.running);
+			el.swiper.autoplay.stop();
+			el.classList.add('swiper-paused');
+			
+			const activeNavItem = el.querySelector('.swiper-pagination-bullet-active');
+			activeNavItem.style.animationPlayState="paused";
+		}
+	}, true);
+	
