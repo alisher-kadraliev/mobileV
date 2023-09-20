@@ -295,17 +295,21 @@ let swiper5 = new Swiper('.swiper-five', {
 	},
 
 });
-const control = document.getElementById("direction-toggle");
-const marquees = document.querySelectorAll(".marquee");
-const wrapper = document.querySelector(".wrapper");
+let swiper7 = new Swiper('.swiper-seven', {
+	direction: 'horizontal',
+	slidesPerView: 1,
+	spaceBetween: 15,
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: true,
+	},
+	pagination: {
+		el: '.custom-pagination-7', // Use your custom pagination selector
+		clickable: true, // Enable bullet click
+	},
 
-control.addEventListener("click", () => {
-  control.classList.toggle("toggle--vertical");
-  wrapper.classList.toggle("wrapper--vertical");
-  [...marquees].forEach((marquee) =>
-    marquee.classList.toggle("marquee--vertical")
-  );
 });
+
 
 // Get references to the close buttons and elements
 var closeButtons = document.querySelectorAll('.header_top_close');
