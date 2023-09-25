@@ -113,7 +113,6 @@ var animateText = function () {
 }
 
 
-/*sweet checkbox scripts*/
 $('.sweet-check :checkbox:checked').each(function (e, i) {
 	$(this).parent().addClass('checked');
 });
@@ -129,7 +128,6 @@ $(document).on('click', '.sweet-check', function () {
 		$(this).find('input').prop('checked', true);
 	}
 
-	//console.log($(this).find('input').prop('checked'));
 });
 
 $(document).on('click', '[data-loader]', function () {
@@ -137,7 +135,6 @@ $(document).on('click', '[data-loader]', function () {
 });
 
 
-/*expandable list scrips****/
 $(document).on('click', '.expandable-item .expandable-header', function () {
 	if ($(this).parent().hasClass('accordion')) {
 		if ($(this).parent().hasClass('active')) {
@@ -176,14 +173,12 @@ $(document).on('click', '.tab-item .menu-item', function (e) {
 });
 
 
-/*post item scripts **************/
 $(document).on('click', '.post-item .post-share > i', function (e) {
 	e.preventDefault();
 	$(this).parent().find('.social-links').fadeToggle('fast');
 });
 
 
-/*popup actions ******************/
 $(document).on('click', '[data-dismiss="true"]', function () {
 	$(this).parents('.popup-overlay').fadeOut('fast');
 });
@@ -202,7 +197,6 @@ $(document).on('click', '.popup-overlay', function (e) {
 
 
 
-/*search popup actions ************/
 
 var openSearchPopup = function () {
 	$('.search-form').fadeIn('fast');
@@ -222,7 +216,6 @@ $(document).on('click', '[data-search="close"]', function () {
 });
 
 
-//swiper-1
 let mySwiper = new Swiper('.swiper-first', {
 	direction: 'horizontal',
 	spaceBetween: 30,
@@ -232,13 +225,12 @@ let mySwiper = new Swiper('.swiper-first', {
 		disableOnInteraction: true,
 	},
 	pagination: {
-		el: '.custom-pagination', // Use your custom pagination selector
-		clickable: true, // Enable bullet click
+		el: '.custom-pagination',
+		clickable: true,
 	},
 
 });
 
-//second slide
 let swiper2 = new Swiper(".swiper-second", {
 	slidesPerView: 1,
 	spaceBetween: 15,
@@ -290,8 +282,8 @@ let swiper5 = new Swiper('.swiper-five', {
 		disableOnInteraction: true,
 	},
 	pagination: {
-		el: '.custom-pagination-5', // Use your custom pagination selector
-		clickable: true, // Enable bullet click
+		el: '.custom-pagination-5',
+		clickable: true,
 	},
 
 });
@@ -304,32 +296,28 @@ let swiper7 = new Swiper('.swiper-seven', {
 		disableOnInteraction: true,
 	},
 	pagination: {
-		el: '.custom-pagination-7', // Use your custom pagination selector
-		clickable: true, // Enable bullet click
+		el: '.custom-pagination-7',
+		clickable: true,
 	},
 
 });
 
 
-// Get references to the close buttons and elements
 var closeButtons = document.querySelectorAll('.header_top_close');
 var elementsToHide = document.querySelectorAll('.header_top');
-var bannerDivs = document.querySelectorAll('.delete_me'); // References to the banner-div elements
+var bannerDivs = document.querySelectorAll('.delete_me');
 
-// Function to hide the element and change the margin of banner-div
 function hideElement(elementToHide, bannerDiv) {
-	elementToHide.style.display = 'none'; // Hide the element
-	bannerDiv.style.marginTop = '60px'; // Change the margin of banner-div
+	elementToHide.style.display = 'none';
+	bannerDiv.style.marginTop = '60px';
 }
 
-// Add a click event listener to each close button
 closeButtons.forEach(function (closeButton, index) {
 	closeButton.addEventListener('click', function () {
 		hideElement(elementsToHide[index], bannerDivs[index]);
-		localStorage.setItem('isElementHidden-' + index, 'true'); // Store the hidden state for this specific slider
+		localStorage.setItem('isElementHidden-' + index, 'true');
 	});
 
-	// Check if the element should initially be hidden for this specific slider
 	var isElementHidden = localStorage.getItem('isElementHidden-' + index) === 'true';
 	if (isElementHidden) {
 		hideElement(elementsToHide[index], bannerDivs[index]);
@@ -337,22 +325,37 @@ closeButtons.forEach(function (closeButton, index) {
 });
 
 
-// goolge
 function googleTranslateElementInit() {
 	new google.translate.TranslateElement({ pageLanguage: 'tr', includedLanguages: 'ar,en,tr,fr,de,ru', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
 }
 
-// swiperEl.addEventListener('mouseenter', function(event) {
-	document.addEventListener('mouseenter', event => {
-		const el = event.target;
-		if (el && el.matches && el.matches('.swiper-container')) {
-			// console.log('mouseenter');
-			// console.log('autoplay running', swiper.autoplay.running);
-			el.swiper.autoplay.stop();
-			el.classList.add('swiper-paused');
-			
-			const activeNavItem = el.querySelector('.swiper-pagination-bullet-active');
-			activeNavItem.style.animationPlayState="paused";
-		}
-	}, true);
-	
+document.addEventListener('mouseenter', event => {
+	const el = event.target;
+	if (el && el.matches && el.matches('.swiper-container')) {
+		el.swiper.autoplay.stop();
+		el.classList.add('swiper-paused');
+
+		const activeNavItem = el.querySelector('.swiper-pagination-bullet-active');
+		activeNavItem.style.animationPlayState = "paused";
+	}
+}, true);
+
+const observer = lozad();
+observer.observe();
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const button = document.getElementById("read-more-button");
+    const hiddenContent = document.querySelector(".hidden-content");
+
+    button.addEventListener("click", function () {
+        if (hiddenContent.style.display === "none" || hiddenContent.style.display === "") {
+            hiddenContent.style.display = "block";
+            button.textContent = "Geri kapat";
+        } else {
+            hiddenContent.style.display = "none";
+            button.textContent = "Devamı oku";
+        }
+    });
+});
+
