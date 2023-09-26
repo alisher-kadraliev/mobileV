@@ -1,331 +1,414 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 
-<!-- Mirrored from educom-mobile.netlify.app/mobile-temp/product-detail by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Aug 2023 12:02:52 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-	<title>Mobile Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>Akademi Dünyasi</title>
 
-	<!-- Google font file. If you want you can change. -->
-	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,900" rel="stylesheet">
+    <!-- Google font file. If you want you can change. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700;900&display=swap" rel="stylesheet">
 
-	<!-- Fontawesome font file css -->
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.webp">
 
-	<!-- Swiper slider css file -->
-	<link rel="stylesheet" href="css/swiper.min.css">
+    <!-- Fontawesome font file css -->
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 
-	<!-- Template global css file. Requared all pages -->
-	<link rel="stylesheet" type="text/css" href="css/global.style.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+
+    <!-- Template global css file. Requared all pages -->
+    <link rel="stylesheet" type="text/css" href="css/global.style.css">
+
+    <!-- Swiper slider css file -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!--turbo slider plugin css file -->
+    <link rel="stylesheet" type="text/css" href="plugins/turbo-slider/turbo.css">
+
+    <!-- JQuery library file. requared all pages -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+
 </head>
 
+
 <body>
-	
-	<div class="wrapper">
-		<div class="nav-menu">
-			<nav class="menu">
+
+
+    <div class="wrapper">
+        <div class="nav-menu">
+            <nav class="menu">
                 <!-- Template logo start -->
                 <div class="nav-header">
-                    <a href='index.html'>
-                        <img class="image-round" alt="" src="img/avatar.png">
-                        <span>john doe</span>
-                        <span>johndoe@example.com</span>
+                    <a href='student-profile.html'>
+                        <img class="image-round lozad" data-src="img/avatar.jpg">
+                        <span>Meraba Mustafa Ali</span>
+                        <span class="sub__text">Tekrar hoş geldiniz</span>
+                        <a class="rbt-btn-link" href="student-profile.html">Hesabım <i class="fa fa-chevron-right"
+                                aria-hidden="true"></i></a>
                     </a>
                 </div>
-                <!-- Template logo end -->
-                <!-- Menu navigation start -->
                 <div class="nav-container">
                     <ul class="main-menu">
                         <li class="active">
-                            <a href='index.html'><img src="img/icons/i1.png" alt=""> Home</a>
+                            <a href='index.html'><i class="fa fa-home" aria-hidden="true"></i> Anasayfa</a>
                         </li>
                         <li>
-                            <a href='about.html'><img src="img/icons/i1.png" alt=""> About Us</a>
+                            <a href='about.html'><i class="fa fa-building" aria-hidden="true"></i> Hakkımızda</a>
                         </li>
                         <li>
-                            <a href='student-profile.html'><img src="img/icons/i1.png" alt=""> Student Profile</a>
+                            <a href='bayilik.html'><i class="fa fa-globe" aria-hidden="true"></i> Bayilik</a>
                         </li>
                         <li>
-                            <a href="#"><img src="img/icons/i1.png" alt=""> Teachers <span class="fa fa-angle-down"></span></a>
-                            <ul>
-                                <li><a data-loader='show' href='all-teachers.html'>All Teachers</a></li>
-                                <li><a data-loader='show' href='teacher-profile.html'>Teacher Profile</a></li>
+                            <a href='sinavMerkez.html'><i class="fa fa-map-marker" aria-hidden="true"></i>Sınav
+                                Merkezi</a>
+                        </li>
+                        <li>
+                            <a href='Kurslar.html'><i class="fa fa-graduation-cap" aria-hidden="true"></i>Kurslar</a>
+                        </li>
+                        <li>
+                            <a href='post-list-1.html'><i class="fa fa-newspaper-o" aria-hidden="true"></i>Blog</a>
+                        </li>
+                        <li>
+                            <a href='about.html'><i class="fa fa-volume-control-phone"
+                                    aria-hidden="true"></i>İletişim</a>
+                        </li>
+                        <ul class="rbt-dropdown-menu switcher-language">
+                            <!-- <li class="has-child-menu">
+                                <a href="#">
+                                    <img class="left-image lozad" data-src="img/assets/en-us.png" alt="Language Images">
+                                    <span class="menu-item">English</span>
+                                    <i class="right-icon fa fa-chevron-down"></i>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">
+                                            <img class="left-image lozad" data-src="img/assets/fr.png" alt="Language Images">
+                                            <span class="menu-item">Français</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img class="left-image lozad" data-src="img/assets/de.png" alt="Language Images">
+                                            <span class="menu-item">Deutsch</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li> -->
+                            <div id="google_translate_element">
+                            </div>
+                        </ul>
+
+                        <div class="social-share-wrapper">
+                            <span class="rbt-short-title d-block">Bizimle Bulun</span>
+                            <ul class="social-icon social-default transparent-with-border justify-content-start mt--20">
+                                <li><a href="https://www.facebook.com/akademidunyasiekm/">
+                                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+
+                                <li><a href="https://www.instagram.com/akademi_dunyasi/">
+                                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                                <li><a href="https://www.youtube.com/channel/UCUvKYFn0BE_lvFkdNWAm8JA">
+                                        <i class="fa fa-youtube-play" aria-hidden="true"></i>
+
+                                    </a>
+                                </li>
                             </ul>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/icons/i1.png" alt=""> Courses <span class="fa fa-angle-down"></span></a>
-                            <ul>
-                                <li><a data-loader='show' href='product-list.html'>Courses List 1</a></li>
-                                <li><a data-loader='show' href='product-list-2.html'>Courses List 2</a></li>
-                                <li><a data-loader='show' href='product-detail.html'>Course Detail</a></li>
-                                <li><a data-loader='show' href='product-basket.html'>Shopping Cart</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);"><img src="img/icons/i1.png" alt=""> Login/Register <span class="fa fa-angle-down"></span></a>
-                            <ul>
-                                <li><a data-loader='show' href='login.html'>Login</a></li>
-                                <li><a data-loader='show' href='signup.html'>Register</a></li>
-                                <li><a data-loader='show' href='forgot-password.html'>Forgot Password</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/icons/i1.png" alt=""> Blog <span class="fa fa-angle-down"></span></a>
-                            <ul>
-                                <li><a data-loader='show' href='post-list-1.html'>List 1</a></li>
-                                <li><a data-loader='show' href='post-list-2.html'>List 2</a></li>
-                                <li><a data-loader='show' href='post-detail.html'>Detail</a></li>
-                                <li><a data-loader='show' href='post-author.html'>Author</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);"><img src="img/icons/i1.png" alt=""> Wizards <span class="fa fa-angle-down"></span></a>
-                            <ul>
-                                <li><a data-loader='show' href='wizard-default.html'>Wizard Default</a></li>
-                                <li><a data-loader='show' href='wizard-fullscreen.html'>Wizard Fullscreen</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a data-loader='show' href='forms.html'><img src="img/icons/i1.png" alt=""> Form Elements</a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/icons/i1.png" alt=""> Components <span class="fa fa-angle-down"></span></a>
-                            <ul>
-                                <li><a data-loader='show' href='tab-bottom.html'>Tab (Bottom)</a></li>
-                                <li><a data-loader='show' href='tab-top.html'>Tab (Top)</a></li>
-                                <li><a data-loader='show' href='accordion.html'>Accordion</a></li>
-                                <li><a data-loader='show' href='popup.html'>Popup Modal</a></li>
-                                <li><a data-loader='show' href='checkbox-list.html'>Check List</a></li>
-                                <li><a data-loader='show' href='link-list.html'>Link List</a></li>
-                                <li><a data-loader='show' href='link-list-two-column.html'>Two Column Links</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/icons/i1.png" alt=""> Pages <span class="fa fa-angle-down"></span></a>
-                            <ul>
-                                <li><a data-loader='show' href='student-profile.html'>User Profile</a></li>
-                                <li><a data-loader='show' href='search-popup.html'>Search Popup</a></li>
-                                <li><a data-loader='show' href='search-result.html'>Search Results</a></li>
-                                <li><a data-loader='show' href='contact.html'>Contact</a></li>
-                                <li><a data-loader='show' href='blank.html'>Blank Page</a></li>
-                            </ul>
-                        </li>
+                        </div>
                     </ul>
                 </div>
                 <!-- Menu navigation end -->
             </nav>
-
-		</div>
-		<div class="wrapper-inline">
-			<!-- Header area start -->
-			<header> <!-- extra class no-background -->
-				<a class="go-back-link" href="javascript:history.back();"><i class="fa fa-arrow-left"></i></a>
-				<h2 class="page-title">Course Details</h2>
-				<div class="navi-menu-button">
-					<em></em>
-					<em></em>
-					<em></em>
-				</div>
-			</header>
-			<!-- Header area end -->
-
-			<!-- Page content start -->
-			<main>
-
-				<section class="container">
-						
-						<div class="swiper-container">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide"><img src="img/product/p6.jpg" alt=""></div>
-								<div class="swiper-slide"><img src="img/product/p6.jpg" alt=""></div>
-								<div class="swiper-slide"><img src="img/product/p6.jpg" alt=""></div>
-							</div>
-						</div>
-						<!-- Add Pagination -->
-    					<div class="swiper-pagination"></div>
-
-						<div class="clear"></div>
-					
-
-
-					<h1 class="product-view-title b-text">Basic Grammers</h1>
-					<h4 class="product-view-price">$17.90 <span class="old-price">$24.99</span></h4>
-
-					<div class="form-mini-divider"></div>
-					<div class="form-mini-divider"></div>
-					<button class="button circle block orange"><i class="fa fa-shopping-basket"></i> Add to Cart</button>
-				</section>
-
-				<section class="container">
-                	<div class="section-head">
-                        <h4 class="title-main">Course Content</h4>
-                        <a class="c-btn" href="#">more</a>
+        </div>
+        <div class="wrapper-inline">
+            <header>
+                <div class="blok_head">
+                    <div class="header_top">
+                        <div class="header_top_content">
+                            <div class="header_top_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+                            <div class="header_top_text">
+                                <strong>Buraya </strong> Kurslar ile ilgili bilgi ya kursun indirim veya bildirim
+                                olabalirim bir defa sadece gösterilir
+                            </div>
+                        </div>
                     </div>
-
-                    <div>
-                        <ul class="courses-list list-unstyled mb-0">
-                            <li>
-                                <a href="#" class="d-flex align-items-center justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                        <img class="img-xs" src="img/product/con1.png" alt="Course image">
-                                        <div class="ml-10">
-                                          <h4 class="courses-name">Pronunciation Gudience</h4>
-                                          <small class="text-muted c-period"><i class="fa fa-clock-o mr-1"></i> 3 Hours</small>
-                                        </div>
-                                      </div>
-                                    <div>
-                                        <div class="d-block">
-                                            <a href="#" class="c-fav"><i class="fa fa-heart"></i> </a>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="s5-bg">
-                                <a href="#" class="d-flex align-items-center justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                        <img class="img-xs" src="img/product/con2.png" alt="Course image">
-                                        <div class="ml-10">
-                                          <h4 class="courses-name">100 Common Conversation</h4>
-                                          <small class="text-muted c-period"><i class="fa fa-clock-o mr-1"></i> 3 Hours</small>
-                                        </div>
-                                      </div>
-                                    <div>
-                                        <div class="d-block">
-                                            <a href="#" class="c-fav v2"><i class="fa fa-heart"></i> </a>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex align-items-center justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                        <img class="img-xs" src="img/product/con3.png" alt="Course image">
-                                        <div class="ml-10">
-                                          <h4 class="courses-name">Most Searching Words</h4>
-                                          <small class="text-muted c-period"><i class="fa fa-clock-o mr-1"></i> 3 Hours</small>
-                                        </div>
-                                      </div>
-                                    <div>
-                                        <div class="d-block">
-                                            <a href="#" class="c-fav"><i class="fa fa-heart"></i> </a>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="d-flex align-items-center justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                        <img class="img-xs" src="img/product/con4.png" alt="Course image">
-                                        <div class="ml-10">
-                                          <h4 class="courses-name">50 Press and Idioms</h4>
-                                          <small class="text-muted c-period"><i class="fa fa-clock-o mr-1"></i> 3 Hours</small>
-                                        </div>
-                                      </div>
-                                    <div>
-                                        <div class="d-block">
-                                            <a href="#" class="c-fav"><i class="fa fa-heart"></i> </a>
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    	
+                    <div class="header_bottom">
+                        <div class="header_bottom_left">
+                            <img class="header-img lozad" data-src="img/assets/logo-removebg-preview.png" alt="">
+                        </div>
+                        <div class="header_bottom_right">
+                            <div class="search-button" data-search="open"><i class="fa fa-search"></i></div>
+                            <div class="shoping-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i> </div>
+                            <div class="navi-menu-button">
+                                <em></em>
+                                <em></em>
+                                <em></em>
+                            </div>
+                        </div>
 
                     </div>
+                </div>
 
+            </header>
+            <div class="search-form">
+                <span class="close-search-form" data-search="close"><i class="fa fa-times"></i> </span>
+                <form>
+                    <div class="search-input">
+                        <input type="text" name="q" class="form-element" placeholder="Search...">
+                        <button type="submit" class="search-input-btn"><i class="fa fa-arrow-right"></i></button>
+                    </div>
+                </form>
+                <div class="recent-search">
+                    <h4 class="search-group-title">Recent Searchs</h4>
+                    <a href="#" class="search-tag">Creative</a>
+                    <a href="#" class="search-tag">Business</a>
+                    <a href="#" class="search-tag">Digital Marketing</a>
+                    <a href="#" class="search-tag">Machine Learning</a>
+                    <a href="#" class="search-tag">Virtual Machine</a>
+                    <a href="#" class="search-tag">cCourses</a>
+                    <a href="#" class="search-tag">HTML test</a>
+                </div>
+                <div class="popular-search">
+                    <h4 class="search-group-title">Popular Searchs</h4>
+                    <a href="#" class="search-tag">Web Development</a>
+                    <a href="#" class="search-tag">Mobile App</a>
+                    <a href="#" class="search-tag">Web Design</a>
+                    <a href="#" class="search-tag">Grammer</a>
+                    <a href="#" class="search-tag">Clinic</a>
+                    <a href="#" class="search-tag">Business Solutions</a>
+                </div>
+            </div>
+            <!-- Page content start -->
+            <main class="margin-second">
+
+                <section class="container">
+                    <div class="swiper-slide"><img src="img/product/p6.jpg" alt=""></div>
+                    <div class="clear"></div>
+                    <h1 class="product-view-title b-text baslık">Emlak Danışmanlığı</h1>
+                    <p class="course-text">Lezzetin sırlarını keşfedin ve mutfakta bir usta olun. Aşçılık Sertifika
+                        Programı ile yemek yapma
+                        sanatını öğrenin ve başarınızı tattırın!</p>
+                    <ul class="rbt-meta">
+                        <li><i class="fa fa-calendar" aria-hidden="true"></i>Son güncelleme 12/2024</li>
+                        <li><i class="fa fa-star-o" aria-hidden="true"></i>Sertifikalı Kurs</li>
+                    </ul>
+                    <h4 class="product-view-price">$17.90 <span class="old-price">$24.99</span></h4>
+
+                    <div class="form-mini-divider"></div>
+                    <div class="form-mini-divider"></div>
+                    <button class="button circle block orange"><i class="fa fa-shopping-basket"></i> Sepete
+                        ekle</button>
+
+                </section>
+
+                <section class="container">
+                    <div class="section-head">
+                        <h4 class="title-main title-course">Kursun Tanımı</h4>
+                    </div>
+
+                    <p class="course-text">Emlak sektöründe çalışmak isteyenler için düzenlenen bir eğitim programıdır.
+                        Bu kurslar emlak sektörü hakkında temel bilgileri yasal düzenlemeleri emlak piyasası analizini
+                        müşteri ilişkileri yönetimini pazarlama stratejilerini ve satış tekniklerini öğretilir.
+
+                        Emlakçılık kursları emlakçı olmak isteyenler için önemli bir başlangıç noktasıdır. Kurslar emlak
+                        piyasasının işleyişini ve müşterilerin ihtiyaçlarını anlamak için gereken becerileri öğretir.
+                        Sosyal Medya Hesaplarımızdan .Kurs Paylaşımlarımızı Görebilirsiniz</p>
                 </section>
 
                 <div class="clear"></div>
 
                 <section class="container">
                     <div class="section-head">
-                        <h4 class="title-main">Course Resources</h4>
-                        <a class="c-btn" href="#">Download</a>
+                        <h4 class="title-main title-course">Kurs içeriği</h4>
                     </div>
-                    <div class="c-wrapper">
-                        <div class="col-2 text-center mb-15 mr-2">
-                            <a href="#">
-                                <div class="provide-item blue-bg">
-                                    <div class="pdf-doc">PDF</div>
-                                    <h4 class="w-text">Pronunciation</h4>
-                                    <p class="w-text mb-0">Head First</p>
-                                </div>
-                            </a>
+                    <!--expendable list item -->
+                    <div class="expandable-item accordion" data-group="accordion2">
+                        <div class="expandable-header">
+                            <i class="list-icon fa fa-adjust"></i>
+                            <h3 class="list-title">Kurs Temelleri</h3>
+                            <i class="list-arrow fa fa-angle-down"></i>
                         </div>
-
-                        <div class="col-2 text-center mb-15 ml-2">
-                            <a href="#">
-                                <div class="provide-item pink-bg">
-                                    <div class="pdf-doc">PDF</div>
-                                    <h4 class="w-text">Conversation</h4>
-                                    <p class="w-text mb-0">Head First</p>
+                        <div class="expandable-content">
+                            <div class="padding-content-course">
+                                <div class="course-inner">
+                                    <div class="course-left">
+                                        <strong>1.Modül: </strong>
+                                    </div>
+                                    <div class="course-right">
+                                        İş sağlığı Güvenliği
+                                    </div>
                                 </div>
-                            </a>
-                        </div>
-
-                        <div class="col-2 text-center mr-2">
-                            <a href="#">
-                                <div class="provide-item orange-bg">
-                                    <div class="pdf-doc">PDF</div>
-                                    <h4 class="w-text">Machine Learning</h4>
-                                    <p class="w-text mb-0">Head First</p>
+                                <div class="course-inner">
+                                    <div class="course-left">
+                                        <strong>2.Modül: </strong>
+                                    </div>
+                                    <div class="course-right">
+                                        Müşteri İle İletişim
+                                    </div>
                                 </div>
-                            </a>
-                        </div>
-
-                        <div class="col-2 text-center ml-2">
-                            <a href="#">
-                                <div class="provide-item purpule-bg">
-                                    <div class="pdf-doc">PDF</div>
-                                    <h4 class="w-text">Searching Words</h4>
-                                    <p class="w-text mb-0">Head First</p>
+                                <div class="course-inner">
+                                    <div class="course-left">
+                                        <strong>2.Modül: </strong>
+                                    </div>
+                                    <div class="course-right">
+                                        Müşteri İle İletişim
+                                    </div>
                                 </div>
-                            </a>
+                                <div class="course-inner">
+                                    <div class="course-left">
+                                        <strong>2.Modül: </strong>
+                                    </div>
+                                    <div class="course-right">
+                                        Müşteri İle İletişim
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <!--expendable list item -->
+                    <div class="form-mini-divider"></div>
+                    <!--expendable list item -->
+                    <div class="expandable-item accordion" data-group="accordion2">
+                        <div class="expandable-header">
+                            <i class="list-icon fa fa-adjust"></i>
+                            <h3 class="list-title">Kurs Temelleri</h3>
+                            <i class="list-arrow fa fa-angle-down"></i>
+                        </div>
+                        <div class="expandable-content">
+                            <div class="padding-content-course">
+                                <div class="course-inner">
+                                    <div class="course-left">
+                                        <strong>1.Modül: </strong>
+                                    </div>
+                                    <div class="course-right">
+                                        İş sağlığı Güvenliği
+                                    </div>
+                                </div>
+                                <div class="course-inner">
+                                    <div class="course-left">
+                                        <strong>2.Modül: </strong>
+                                    </div>
+                                    <div class="course-right">
+                                        Müşteri İle İletişim
+                                    </div>
+                                </div>
+                                <div class="course-inner">
+                                    <div class="course-left">
+                                        <strong>2.Modül: </strong>
+                                    </div>
+                                    <div class="course-right">
+                                        Müşteri İle İletişim
+                                    </div>
+                                </div>
+                                <div class="course-inner">
+                                    <div class="course-left">
+                                        <strong>2.Modül: </strong>
+                                    </div>
+                                    <div class="course-right">
+                                        Müşteri İle İletişim
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--expendable list item -->
+                    <div class="form-mini-divider"></div>
+                    <!--expendable list item -->
+                    <div class="expandable-item accordion" data-group="accordion2">
+                        <div class="expandable-header">
+                            <i class="list-icon fa fa-adjust"></i>
+                            <h3 class="list-title">Kurs Temelleri</h3>
+                            <i class="list-arrow fa fa-angle-down"></i>
+                        </div>
+                        <div class="expandable-content">
+                            <div class="padding-content-course">
+                                <div class="course-inner">
+                                    <div class="course-left">
+                                        <strong>1.Modül: </strong>
+                                    </div>
+                                    <div class="course-right">
+                                        İş sağlığı Güvenliği
+                                    </div>
+                                </div>
+                                <div class="course-inner">
+                                    <div class="course-left">
+                                        <strong>2.Modül: </strong>
+                                    </div>
+                                    <div class="course-right">
+                                        Müşteri İle İletişim
+                                    </div>
+                                </div>
+                                <div class="course-inner">
+                                    <div class="course-left">
+                                        <strong>2.Modül: </strong>
+                                    </div>
+                                    <div class="course-right">
+                                        Müşteri İle İletişim
+                                    </div>
+                                </div>
+                                <div class="course-inner">
+                                    <div class="course-left">
+                                        <strong>2.Modül: </strong>
+                                    </div>
+                                    <div class="course-right">
+                                        Müşteri İle İletişim
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-mini-divider"></div>
                 </section>
 
                 <div class="clear"></div>
 
                 <section class="container">
-                	<div class="section-head">
-                        <h4 class="title-main">Course Assignments</h4>
+                    <div class="section-head">
+                        <h4 class="title-main title-course">Course Assignments</h4>
                         <a class="c-btn" href="#">more</a>
                     </div>
 
                     <div class="news-list-item no-image has-l-p">
-							<div class="list-content">
-								<p class="assign-txt">Submit Today</p>
-								<h2 class="list-title"><a href="#">Without Image list Item Lorem Ipsum Dolar Sit Amet</a></h2>
-								<a href="#" class="list-author">Luke Cage</a> - <span class="list-time">3 hours ago</span>
-							</div>
-						</div>
+                        <div class="list-content">
+                            <p class="assign-txt">Submit Today</p>
+                            <h2 class="list-title"><a href="#">Without Image list Item Lorem Ipsum Dolar Sit Amet</a>
+                            </h2>
+                            <a href="#" class="list-author">Luke Cage</a> - <span class="list-time">3 hours ago</span>
+                        </div>
+                    </div>
 
-						<div class="form-mini-divider"></div>
+                    <div class="form-mini-divider"></div>
 
-						<div class="news-list-item no-image has-l-p">
-							<div class="list-content">
-								<p class="assign-txt">Submit Tomorrow</p>
-								<h2 class="list-title"><a href="#">Lorem Ipsum has been the industry's standard dummy text ever since the</a></h2>
-								<a href="#" class="list-author">Luke Cage</a> - <span class="list-time">3 hours ago</span>
-							</div>
-						</div>
+                    <div class="news-list-item no-image has-l-p">
+                        <div class="list-content">
+                            <p class="assign-txt">Submit Tomorrow</p>
+                            <h2 class="list-title"><a href="#">Lorem Ipsum has been the industry's standard dummy text
+                                    ever since the</a></h2>
+                            <a href="#" class="list-author">Luke Cage</a> - <span class="list-time">3 hours ago</span>
+                        </div>
+                    </div>
 
-						<div class="form-mini-divider"></div>
+                    <div class="form-mini-divider"></div>
 
-						<div class="news-list-item no-image has-l-p">
-							<div class="list-content">
-								<p class="assign-txt">Submit Today</p>
-								<h2 class="list-title"><a href="#">t is a long established fact that a reader will be distracted by the readable</a></h2>
-								<a href="#" class="list-author">Luke Cage</a> - <span class="list-time">3 hours ago</span>
-							</div>
-						</div>
+                    <div class="news-list-item no-image has-l-p">
+                        <div class="list-content">
+                            <p class="assign-txt">Submit Today</p>
+                            <h2 class="list-title"><a href="#">t is a long established fact that a reader will be
+                                    distracted by the readable</a></h2>
+                            <a href="#" class="list-author">Luke Cage</a> - <span class="list-time">3 hours ago</span>
+                        </div>
+                    </div>
                 </section>
 
-				<footer>
+                <footer>
                     <div class="container">
                         <ul>
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -337,40 +420,73 @@
                     </div>
                 </footer>
 
-			</main>
-			<!-- Page content end -->
-		</div>
-	</div>
+            </main>
 
 
-	<!-- Bouble link -->
-	<a class='bouble-link orange txt-white' href='product-basket.html'><i class="fa fa-shopping-basket"></i></a>
 
-	<!--Page loader DOM Elements. Requared all pages-->
-	<div class="sweet-loader">
-		<div class="box">
-		  	<div class="circle1"></div>
-		  	<div class="circle2"></div>
-		  	<div class="circle3"></div>
-		</div>
-	</div>
+            <!-- Bouble link -->
+            <a class='bouble-link orange txt-white' href='product-basket.html'><i class="fa fa-shopping-basket"></i></a>
 
-	<!-- JQuery library file. requared all pages -->
-	<script src="js/jquery-3.2.1.min.js"></script>
+            <footer>
+                <div class="container">
+                    <ul>
+                        <li><a class="footer-social" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="footer-social" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="footer-social" href="#"><i class="fa fa-google"></i></a></li>
+                        <li><a class="footer-social" href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                    <p class="footer-text-1">Akademi Dünyası tarafından sunulmuştur.
+                        © Tüm
+                        hakları saklıdır.</p>
+                    <h3 class="footer-title">Hakkımızda</h3>
+                    <div class="footer-about">
+                        <a href="#" class="footer-text">Misyon&Vizyon</a>
 
-	<!-- Template global script file. requared all pages -->
-	<script src="js/global.script.js"></script>
+                        <a href="#" class="footer-text">Gizlilik Politikası</a>
 
-	<!-- Swiper JS -->
+                        <a href="#" class="footer-text">Üyelik Sözleşmesi</a>
+                        <a href="#" class="footer-text">KVKK Aydınlatma Metni</a>
+                        <a href="#" class="footer-text">Mesafeli Satış Sözleşmesi</a>
+                        <a href="#" class="footer-text">Teslimat ve İade Politikası</a>
+                    </div>
+                    <h3 class="footer-title">İletişim</h3>
+                    <div class="footer-about">
+                        <a href="https://goo.gl/maps/Bgvn53yNad3mpSz99" target='_blank' class="footer-text"><i
+                                class="fa fa-map" aria-hidden="true"></i>Kışla, 48. Sk. No:1, 07040
+                            Muratpaşa/Antalya</a>
+
+                        <a href="tel:4443307" class="footer-text"><i class="fa fa-phone-square"
+                                aria-hidden="true"></i>444 33 07</a>
+                        <a href="tel:05323966071" class="footer-text"><i class="fa fa-telegram"
+                                aria-hidden="true"></i>0532 396 60 71</a>
+
+                        <a href="mailto:info@akademidunyasi.com.tr" class="footer-text">info@akademidunyasi.com.tr</a>
+                    </div>
+                    <img class="header-img footer-end lozad" data-src="img/assets/logo-removebg-preview.png"
+                        alt="Anasite logosu">
+                </div>
+            </footer>
+        </div>
+    </div>
+
+
+
+
+    <script src="js/cap.js"></script>
+    <script>
+        handleFormSubmission("form-11", "4"); 
+    </script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
     <script src="js/swiper.min.js"></script>
-
-    <!-- Initialize Swiper -->
- 
-    <script src="js/swiper-ini.js"></script>
-
+    <!-- Template global script file. requared all pages -->
+    <script src="js/lozad.js"></script>
+    <script src="js/global.script.js"></script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- Turbo slider plugin file. requared only wizard pages -->
+    <script src="plugins/turbo-slider/turbo.min.js"></script>
+    <script src="js/turbo-ini.js"></script>
 
 </body>
 
-
-<!-- Mirrored from educom-mobile.netlify.app/mobile-temp/product-detail by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Aug 2023 12:02:59 GMT -->
 </html>

@@ -1,135 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 
-<!-- Mirrored from educom-mobile.netlify.app/mobile-temp/post-detail by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Aug 2023 12:03:01 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-	<title>Mobile Template</title>
+	<title>Akademi Dünyasi</title>
 
 	<!-- Google font file. If you want you can change. -->
-	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,900" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.webp">
 
 	<!-- Fontawesome font file css -->
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+
 	<!-- Template global css file. Requared all pages -->
 	<link rel="stylesheet" type="text/css" href="css/global.style.css">
+
+	<!-- Swiper slider css file -->
+	<link rel="stylesheet" href="css/swiper.min.css">
+
+	<!--turbo slider plugin css file -->
+	<link rel="stylesheet" type="text/css" href="plugins/turbo-slider/turbo.css">
+
+	<!-- JQuery library file. requared all pages -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+
 </head>
 
+
 <body>
-	
+
 	<div class="wrapper">
 		<div class="nav-menu">
 			<nav class="menu">
-                <!-- Template logo start -->
-                <div class="nav-header">
-                    <a href='index.html'>
-                        <img class="image-round" alt="" src="img/avatar.png">
-                        <span>john doe</span>
-                        <span>johndoe@example.com</span>
-                    </a>
-                </div>
-                <!-- Template logo end -->
-                <!-- Menu navigation start -->
-                <div class="nav-container">
-                    <ul class="main-menu">
-                    	<li class="active">
-                            <a href='index.html'><img src="img/icons/i1.png" alt=""> Home</a>
-                        </li>
-                        <li>
-                            <a href='about.html'><img src="img/icons/i1.png" alt=""> About Us</a>
-                        </li>
-                        <li>
-                            <a href='student-profile.html'><img src="img/icons/i1.png" alt=""> Student Profile</a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/icons/i1.png" alt=""> Teachers <span class="fa fa-angle-down"></span></a>
-                            <ul>
-                                <li><a data-loader='show' href='all-teachers.html'>All Teachers</a></li>
-                                <li><a data-loader='show' href='teacher-profile.html'>Teacher Profile</a></li>
-                            </ul>
-                        </li>
-                        <li>
-							<a href="#"><img src="img/icons/i1.png" alt=""> Courses <span class="fa fa-angle-down"></span></a>
-							<ul>
-                                <li><a data-loader='show' href='product-list.html'>Courses List 1</a></li>
-								<li><a data-loader='show' href='product-list-2.html'>Courses List 2</a></li>
-								<li><a data-loader='show' href='product-detail.html'>Course Detail</a></li>
-								<li><a data-loader='show' href='product-basket.html'>Shopping Cart</a></li>
-							</ul>
+				<!-- Template logo start -->
+				<div class="nav-header">
+					<a href='student-profile.html'>
+						<img class="image-round lozad" data-src="img/avatar.jpg">
+						<span>Meraba Mustafa Ali</span>
+						<span class="sub__text">Tekrar hoş geldiniz</span>
+						<a class="rbt-btn-link" href="student-profile.html">Hesabım <i class="fa fa-chevron-right"
+								aria-hidden="true"></i></a>
+					</a>
+				</div>
+				<div class="nav-container">
+					<ul class="main-menu">
+						<li class="active">
+							<a href='index.html'><i class="fa fa-home" aria-hidden="true"></i> Anasayfa</a>
 						</li>
-                        <li>
-                            <a href="javascript:void(0);"><img src="img/icons/i1.png" alt=""> Login/Register <span class="fa fa-angle-down"></span></a>
-                            <ul>
-                                <li><a data-loader='show' href='login.html'>Login</a></li>
-                                <li><a data-loader='show' href='signup.html'>Register</a></li>
-                                <li><a data-loader='show' href='forgot-password.html'>Forgot Password</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/icons/i1.png" alt=""> Blog <span class="fa fa-angle-down"></span></a>
-                            <ul>
-                                <li><a data-loader='show' href='post-list-1.html'>List 1</a></li>
-                                <li><a data-loader='show' href='post-list-2.html'>List 2</a></li>
-                                <li><a data-loader='show' href='post-detail.html'>Detail</a></li>
-                                <li><a data-loader='show' href='post-author.html'>Author</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);"><img src="img/icons/i1.png" alt=""> Wizards <span class="fa fa-angle-down"></span></a>
-                            <ul>
-                                <li><a data-loader='show' href='wizard-default.html'>Wizard Default</a></li>
-                                <li><a data-loader='show' href='wizard-fullscreen.html'>Wizard Fullscreen</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a data-loader='show' href='forms.html'><img src="img/icons/i1.png" alt=""> Form Elements</a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/icons/i1.png" alt=""> Components <span class="fa fa-angle-down"></span></a>
-                            <ul>
-                                <li><a data-loader='show' href='tab-bottom.html'>Tab (Bottom)</a></li>
-                                <li><a data-loader='show' href='tab-top.html'>Tab (Top)</a></li>
-                                <li><a data-loader='show' href='accordion.html'>Accordion</a></li>
-                                <li><a data-loader='show' href='popup.html'>Popup Modal</a></li>
-                                <li><a data-loader='show' href='checkbox-list.html'>Check List</a></li>
-                                <li><a data-loader='show' href='link-list.html'>Link List</a></li>
-                                <li><a data-loader='show' href='link-list-two-column.html'>Two Column Links</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/icons/i1.png" alt=""> Pages <span class="fa fa-angle-down"></span></a>
-                            <ul>
-                                <li><a data-loader='show' href='student-profile.html'>User Profile</a></li>
-                                <li><a data-loader='show' href='search-popup.html'>Search Popup</a></li>
-                                <li><a data-loader='show' href='search-result.html'>Search Results</a></li>
-                                <li><a data-loader='show' href='contact.html'>Contact</a></li>
-                                <li><a data-loader='show' href='blank.html'>Blank Page</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Menu navigation end -->
-            </nav>
+						<li>
+							<a href='about.html'><i class="fa fa-building" aria-hidden="true"></i> Hakkımızda</a>
+						</li>
+						<li>
+							<a href='bayilik.html'><i class="fa fa-globe" aria-hidden="true"></i> Bayilik</a>
+						</li>
+						<li>
+							<a href='sinavMerkez.html'><i class="fa fa-map-marker" aria-hidden="true"></i>Sınav
+								Merkezi</a>
+						</li>
+						<li>
+							<a href='Kurslar.html'><i class="fa fa-graduation-cap" aria-hidden="true"></i>Kurslar</a>
+						</li>
+						<li>
+							<a href='about.html'><i class="fa fa-newspaper-o" aria-hidden="true"></i>Blog</a>
+						</li>
+						<li>
+							<a href='about.html'><i class="fa fa-volume-control-phone"
+									aria-hidden="true"></i>İletişim</a>
+						</li>
+						<ul class="rbt-dropdown-menu switcher-language">
+							<!-- <li class="has-child-menu">
+                                <a href="#">
+                                    <img class="left-image" src="img/assets/en-us.png" alt="Language Images">
+                                    <span class="menu-item">English</span>
+                                    <i class="right-icon fa fa-chevron-down"></i>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="#">
+                                            <img class="left-image" src="img/assets/fr.png" alt="Language Images">
+                                            <span class="menu-item">Français</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img class="left-image" src="img/assets/de.png" alt="Language Images">
+                                            <span class="menu-item">Deutsch</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li> -->
+							<div id="google_translate_element">
+							</div>
+						</ul>
 
+						<div class="social-share-wrapper">
+							<span class="rbt-short-title d-block">Bizimle Bulun</span>
+							<ul class="social-icon social-default transparent-with-border justify-content-start mt--20">
+								<li><a href="https://www.facebook.com/akademidunyasiekm/">
+										<i class="fa fa-facebook" aria-hidden="true"></i>
+									</a>
+								</li>
+
+								<li><a href="https://www.instagram.com/akademi_dunyasi/">
+										<i class="fa fa-instagram" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li><a href="https://www.youtube.com/channel/UCUvKYFn0BE_lvFkdNWAm8JA">
+										<i class="fa fa-youtube-play" aria-hidden="true"></i>
+
+									</a>
+								</li>
+							</ul>
+						</div>
+					</ul>
+				</div>
+				<!-- Menu navigation end -->
+			</nav>
 		</div>
 		<div class="wrapper-inline">
-			<!-- Header area start -->
-			<header class="no-background"> <!-- extra class no-background -->
-				<a class="go-back-link" href="javascript:history.back();"><i class="fa fa-arrow-left"></i></a>
-				<h2 class="page-title">POST DETAIL</h2>
-				<div class="navi-menu-button">
-					<em></em>
-					<em></em>
-					<em></em>
+			<header>
+				<div class="blok_head">
+					<div class="header_top">
+						<div class="header_top_content">
+							<div class="header_top_close"><i class="fa fa-times" aria-hidden="true"></i></div>
+							<div class="header_top_text">
+								<strong>Buraya </strong> Kurslar ile ilgili bilgi ya kursun indirim veya bildirim
+								olabalirim bir defa sadece gösterilir
+							</div>
+						</div>
+					</div>
+					<div class="header_bottom">
+						<div class="header_bottom_left">
+							<img class="header-img lozad" data-src="img/assets/logo-removebg-preview.png" alt="">
+						</div>
+						<div class="header_bottom_right">
+							<div class="search-button" data-search="open"><i class="fa fa-search"></i></div>
+							<div class="shoping-button"><i class="fa fa-shopping-cart" aria-hidden="true"></i> </div>
+							<div class="navi-menu-button">
+								<em></em>
+								<em></em>
+								<em></em>
+							</div>
+						</div>
+
+					</div>
 				</div>
+
 			</header>
-			<!-- Header area end -->
-			<!-- Page content start -->
-			<main class="no-margin">
+			<main class="margin">
 
 				<section class="container">
 
@@ -137,44 +165,32 @@
 					<div class="form-divider"></div>
 					<div class="post-item mt-30">
 						<div class="post-asset image">
-							<img src="img/assets/post-img-2.jpg" alt="">
+							<img class="lozad" data-src="img/assets/post-img-2.jpg" alt="">
 						</div>
 						<div class="post-header">
 							<h1 class="post-title">How Scientific Is Modern Medicine?</h1>
-							<span class="post-category"><i class="fa fa-th-large"></i> Travel</span>
+							<span class="post-category"><i class="fa fa-th-large"></i> Güzellik</span>
 							<span class="post-date"><i class="fa fa-clock-o"></i> 7 hours ago</span>
-							<span class="post-comments"><i class="fa fa-comments"></i> 13 comments</span>
-						</div>
-						<div class="post-footer">
-							<a href="#" class="post-author">
-								<span class="author-img"><img src="img/avatar.png" alt=""></span>
-								<span class="author-name">post by<b>john doe</b></span>
-							</a>
-							<div class="post-extra">
-								<div class="add-favorite"><i class="fa fa-heart-o"></i></div>
-								<div class="post-share"><i class="fa fa-share-alt"></i>
-									<div class="social-links">
-										<a href="#" class="share-facebook"><i class="fa fa-facebook"></i></a>
-										<a href="#" class="share-twitter"><i class="fa fa-twitter"></i></a>
-										<a href="#" class="share-google-plus"><i class="fa fa-google-plus"></i></a>
-									</div>
-								</div>
-							</div>
 						</div>
 					</div>
-					<!-- POST DETAIL ITEM END -->
-
-
-
-					<!-- POST DETAIL CONTENT START -->
 					<div class="post-detail">
-						<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+						<p>There are many variations of passages of Lorem Ipsum available, but the majority have
+							suffered alteration in some form, by injected humour, or randomised words which don't look
+							even slightly believable.</p>
 						<h2>This Title H2</h2>
-						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur</p>
+						<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+							laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+							architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+							aspernatur aut odit aut fugit, sed quia consequuntur</p>
 						<h3>This Title H3</h3>
-						<p>The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+						<p>The generated Lorem Ipsum is therefore always free from repetition, injected humour, or
+							non-characteristic words etc.</p>
 						<h4>This Title H4</h4>
-						<p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
+						<p>If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything
+							embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet
+							tend to repeat predefined chunks as necessary, making this the first true generator on the
+							Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model
+							sentence structures, to generate Lorem Ipsum which looks reasonable.</p>
 						<ul>
 							<li>Travel</li>
 							<li>Funny</li>
@@ -182,129 +198,331 @@
 							<li>Extra Category</li>
 						</ul>
 					</div>
-					<!-- POST DETAIL CONTENT END -->
-
-
-					<!--POST COMMENTS START-->
-					<div class="post-comments">
-						<ul>
-							<li>
-								<div class="comment-container">
-									<div class="comment-header">
-										<span class="user-image">
-											<img src="img/avatar.png" alt="" width="32" height="32">
-										</span>
-										<span class="user-name">john doe</span>
-										<span class="comment-date"><i class="fa fa-clock-o"></i> 4 hours ago</span>
-									</div>
-									<div class="comment-content">
-										Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="comment-container">
-									<div class="comment-header">
-										<span class="user-image">
-											<img src="img/avatar.png" alt="" width="32" height="32">
-										</span>
-										<span class="user-name">john doe</span>
-										<span class="comment-date"><i class="fa fa-clock-o"></i> 4 hours ago</span>
-									</div>
-									<div class="comment-content">
-										All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="comment-container">
-									<div class="comment-header">
-										<span class="user-image">
-											<img src="img/avatar.png" alt="" width="32" height="32">
-										</span>
-										<span class="user-name">john doe</span>
-										<span class="comment-date"><i class="fa fa-clock-o"></i> 4 hours ago</span>
-									</div>
-									<div class="comment-content">
-										There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text
-									</div>
-								</div>
-								<ul>
-									<li>
-										<div class="comment-container">
-											<div class="comment-header">
-												<span class="user-image">
-													<img src="img/avatar.png" alt="" width="32" height="32">
-												</span>
-												<span class="user-name">john doe</span>
-												<span class="comment-date"><i class="fa fa-clock-o"></i> 4 hours ago</span>
-											</div>
-											<div class="comment-content">
-												It was popularised in the 1960s with the release of Letraset sheets containing
-											</div>
-										</div>
-									</li>
-									<li>
-										<div class="comment-container">
-											<div class="comment-header">
-												<span class="user-image">
-													<img src="img/avatar.png" alt="" width="32" height="32">
-												</span>
-												<span class="user-name">john doe</span>
-												<span class="comment-date"><i class="fa fa-clock-o"></i> 4 hours ago</span>
-											</div>
-											<div class="comment-content">
-												And more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-											</div>
-										</div>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<div class="comment-container">
-									<div class="comment-header">
-										<span class="user-image">
-											<img src="img/avatar.png" alt="" width="32" height="32">
-										</span>
-										<span class="user-name">john doe</span>
-										<span class="comment-date"><i class="fa fa-clock-o"></i> 4 hours ago</span>
-									</div>
-									<div class="comment-content">
-										It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
-					<!--POST COMMENTS START-->
-					
-					<div class="form-divider"></div>
 
 				</section>
+				<section class="container">
+                    <div class="section-head">
+                        <h4 class="title-main">Son dikkat edici kurslar</h4>
+                        <a class='c-btn' href='product-list.html'>devamı</a>
+                    </div>
+                    <div class="product-two-column">
+                        <div class="swiper swiper-third">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="row">
+                                        <div class="product-item v2 mb-15 mr-2">
+                                            <a data-loader='show' href='product-detail.html'>
+                                                <div class="no-border wrap-content">
+                                                    <img class="product-image lozad"
+                                                        data-src="https://akademidunyasi.com.tr/panel/assets/img/egitim/724antalya_ciltbak%C4%B1m_kursu.jpg">
+                                                    <h2 class="product-title">Emlak Danışmanlığı</h2>
+
+
+                                                  
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-item v2 mb-15 ml-2">
+                                            <a data-loader='show' href='product-detail.html'>
+                                                <div class="no-border wrap-content">
+                                                    <img class="product-image lozad" data-src="img/product/course2.png">
+                                                    <h2 class="product-title">Emlak Danışmanlığı</h2>
+
+
+                                                    
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-item v2 mr-2">
+                                            <a data-loader='show' href='product-detail.html'>
+                                                <img class="product-image lozad" data-src="img/product/course3.png"
+                                                    alt="">
+                                                <h2 class="product-title">Digital Marketing</h2>
+
+                                              
+                                            </a>
+                                        </div>
+
+                                        <div class="product-item v2 ml-2">
+                                            <a data-loader='show' href='product-detail.html'>
+                                                <img class="product-image lozad" data-src="img/product/course4.png"
+                                                    alt="">
+                                                <h2 class="product-title">Web yazılım</h2>
+
+                                             
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="row">
+                                        <div class="product-item v2 mb-15 mr-2">
+                                            <a data-loader='show' href='product-detail.html'>
+                                                <img class="product-image lozad" data-src="img/product/course1.png">
+                                                <h2 class="product-title">Emlak Danışmanlığı</h2>
+
+
+                                              
+                                            </a>
+                                        </div>
+
+                                        <div class="product-item v2 mb-15 ml-2">
+                                            <a data-loader='show' href='product-detail.html'>
+                                                <img class="product-image lozad" data-src="img/product/course2.png">
+                                                <h2 class="product-title">Emlak Danışmanlığı</h2>
+
+                                            </a>
+                                        </div>
+
+                                        <div class="product-item v2 mr-2">
+                                            <a data-loader='show' href='product-detail.html'>
+                                                <img class="product-image lozad" data-src="img/product/course3.png"
+                                                    alt="">
+                                                <h2 class="product-title">Digital Marketing</h2>
+
+                                             
+                                            </a>
+                                        </div>
+
+                                        <div class="product-item v2 ml-2">
+                                            <a data-loader='show' href='product-detail.html'>
+                                                <img class="product-image lozad" data-src="img/product/course4.png"
+                                                    alt="">
+                                                <h2 class="product-title">Web yazılım</h2>
+
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="row">
+                                        <div class="product-item v2 mb-15 mr-2">
+                                            <a data-loader='show' href='product-detail.html'>
+                                                <img class="product-image lozad" data-src="img/product/course1.png">
+                                                <h2 class="product-title">Emlak Danışmanlığı</h2>
+
+
+                                                
+                                            </a>
+                                        </div>
+
+                                        <div class="product-item v2 mb-15 ml-2">
+                                            <a data-loader='show' href='product-detail.html'>
+                                                <img class="product-image lozad" data-src="img/product/course2.png">
+                                                <h2 class="product-title">Emlak Danışmanlığı</h2>
+
+
+                                                
+                                            </a>
+                                        </div>
+
+                                        <div class="product-item v2 mr-2">
+                                            <a data-loader='show' href='product-detail.html'>
+                                                <img class="product-image lozad" data-src="img/product/course3.png"
+                                                    alt="">
+                                                <h2 class="product-title">Digital Marketing</h2>
+
+                                               
+                                                </span>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-item v2 ml-2">
+                                            <a data-loader='show' href='product-detail.html'>
+                                                <img class="product-image lozad" data-src="img/product/course4.png"
+                                                    alt="">
+                                                <h2 class="product-title">Web yazılım</h2>
+
+                                                
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="row">
+                                        <div class="product-item v2 mb-15 mr-2">
+                                            <a data-loader='show' href='product-detail.html'>
+                                                <img class="product-image lozad" data-src="img/product/course1.png">
+                                                <h2 class="product-title">Emlak Danışmanlığı</h2>
+
+
+                                                
+                                            </a>
+                                        </div>
+
+                                        <div class="product-item v2 mb-15 ml-2">
+                                            <a data-loader='show' href='product-detail.html'>
+                                                <img class="product-image lozad" data-src="img/product/course2.png">
+                                                <h2 class="product-title">Emlak Danışmanlığı</h2>
+
+
+                                                
+                                            </a>
+                                        </div>
+
+                                        <div class="product-item v2 mr-2">
+                                            <a data-loader='show' href='product-detail.html'>
+                                                <img class="product-image lozad" data-src="img/product/course3.png"
+                                                    alt="">
+                                                <h2 class="product-title">Digital Marketing</h2>
+
+                                                </span>
+                                            </a>
+                                        </div>
+
+                                        <div class="product-item v2 ml-2">
+                                            <a data-loader='show' href='product-detail.html'>
+                                                <img class="product-image lozad" data-src="img/product/course4.png"
+                                                    alt="">
+                                                <h2 class="product-title">Web yazılım</h2>
+
+                                                
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="custom-pagination-3"></div>
+                        </div>
+
+
+                    </div>
+                </section>
+				<section class="container">
+					<form action="" id="form-10">
+						<div class="form-divider"></div>
+						<div class="form-label-divider "><span>Biz sizi Arayalım</span></div>
+						<div class="form-divider"></div>
+						<div class="form-divider"></div>
+
+						<div class="form-row-group with-icons">
+							<div class="form-row no-padding">
+								<i class="fa fa-user" aria-hidden="true"></i>
+								<input required type="text" class="form-element" placeholder="İsim Soyisim">
+							</div>
+						</div>
+
+						<div class="form-mini-divider"></div>
+						<div class="form-row-group with-icons">
+							<div class="form-row no-padding">
+								<i class="fa fa-envelope"></i>
+								<input required type="email" class="form-element" placeholder="Email">
+							</div>
+						</div>
+						<div class="form-mini-divider"></div>
+						<div class="form-row-group with-icons">
+							<div class="form-row no-padding">
+								<i class="fa fa-phone" aria-hidden="true"></i>
+								<input required type="tel" class="form-element" placeholder="Telefon">
+							</div>
+						</div>
+						<div class="form-mini-divider"></div>
+
+						<div class="form-row-group with-icons">
+							<div class="form-row no-padding">
+								<i class="fa fa-map-o" aria-hidden="true"></i>
+								<select required class="form-element">
+									<option value="" selected>İl seç</option>
+									<option value="1">English</option>
+									<option value="1">Spanish</option>
+									<option value="1">Turkish</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-mini-divider"></div>
+						<div class="form-row-group with-icons">
+							<div class="form-row no-padding">
+								<i class="fa fa-sitemap" aria-hidden="true"></i>
+								<select required class="form-element">
+									<option value="" selected>İlçe seç</option>
+									<option value="1">English</option>
+									<option value="1">Spanish</option>
+									<option value="1">Turkish</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-mini-divider"></div>
+
+						<div class="form-row-group with-icons">
+							<div class="form-row no-padding">
+								<i class="fa fa-comments-o" aria-hidden="true"></i>
+								<textarea required class="form-element" placeholder="Mesajınız"></textarea>
+							</div>
+						</div>
+						<div class="form-mini-divider"></div>
+
+						<div class="form-row-group cont">
+							<div class="form-row no-padding">
+								<input type="text" placeholder='2 + 2 nedir?' class="form-element"
+									name="captcha-form-10" id="captcha-form-10" required>
+							</div>
+						</div>
+
+						<div class="form-mini-divider"></div>
+						<button type="submit" class="button circle block orange sm-button space ">Gönder</button>
+					</form>
+				</section>
+				
 			</main>
-			<!-- Page content end -->
+			<footer>
+				<div class="container">
+					<ul>
+						<li><a class="footer-social" href="#"><i class="fa fa-facebook"></i></a></li>
+						<li><a class="footer-social" href="#"><i class="fa fa-twitter"></i></a></li>
+						<li><a class="footer-social" href="#"><i class="fa fa-google"></i></a></li>
+						<li><a class="footer-social" href="#"><i class="fa fa-instagram"></i></a></li>
+					</ul>
+					<p class="footer-text-1">Akademi Dünyası tarafından sunulmuştur.
+						© Tüm
+						hakları saklıdır.</p>
+					<h3 class="footer-title">Hakkımızda</h3>
+					<div class="footer-about">
+						<a href="#" class="footer-text">Misyon&Vizyon</a>
+
+						<a href="#" class="footer-text">Gizlilik Politikası</a>
+
+						<a href="#" class="footer-text">Üyelik Sözleşmesi</a>
+						<a href="#" class="footer-text">KVKK Aydınlatma Metni</a>
+						<a href="#" class="footer-text">Mesafeli Satış Sözleşmesi</a>
+						<a href="#" class="footer-text">Teslimat ve İade Politikası</a>
+					</div>
+					<h3 class="footer-title">İletişim</h3>
+					<div class="footer-about">
+						<a href="https://goo.gl/maps/Bgvn53yNad3mpSz99" target='_blank' class="footer-text"><i
+								class="fa fa-map" aria-hidden="true"></i>Kışla, 48. Sk. No:1, 07040
+							Muratpaşa/Antalya</a>
+
+						<a href="tel:4443307" class="footer-text"><i class="fa fa-phone-square"
+								aria-hidden="true"></i>444 33 07</a>
+						<a href="tel:05323966071" class="footer-text"><i class="fa fa-telegram"
+								aria-hidden="true"></i>0532 396 60 71</a>
+
+						<a href="mailto:info@akademidunyasi.com.tr" class="footer-text">info@akademidunyasi.com.tr</a>
+					</div>
+					<img class="header-img footer-end lozad" data-src="img/assets/logo-removebg-preview.png"
+						alt="Anasite logosu">
+				</div>
+			</footer>
 		</div>
 	</div>
-
-
-	<!--Page loader DOM Elements. Requared all pages-->
-	<div class="sweet-loader">
-		<div class="box">
-		  	<div class="circle1"></div>
-		  	<div class="circle2"></div>
-		  	<div class="circle3"></div>
-		</div>
-	</div>
-
-	<!-- JQuery library file. requared all pages -->
-	<script src="js/jquery-3.2.1.min.js"></script>
-
+	<script src="js/cap.js"></script>
+	<script>
+		handleFormSubmission("form-10", "4"); 
+	</script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+	<script src="js/swiper.min.js"></script>
 	<!-- Template global script file. requared all pages -->
+	<script src="js/lozad.js"></script>
 	<script src="js/global.script.js"></script>
+	<script type="text/javascript"
+		src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	<!-- Turbo slider plugin file. requared only wizard pages -->
+	<script src="plugins/turbo-slider/turbo.min.js"></script>
+	<script src="js/turbo-ini.js"></script>
 
-	
 </body>
 
-
-<!-- Mirrored from educom-mobile.netlify.app/mobile-temp/post-detail by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Aug 2023 12:03:01 GMT -->
 </html>

@@ -130,9 +130,6 @@ $(document).on('click', '.sweet-check', function () {
 
 });
 
-$(document).on('click', '[data-loader]', function () {
-	$('.sweet-loader').show().addClass('show');
-});
 
 
 $(document).on('click', '.expandable-item .expandable-header', function () {
@@ -373,9 +370,6 @@ document.addEventListener('mouseenter', event => {
 	}
 }, true);
 
-const observer = lozad();
-observer.observe();
-
 
 document.addEventListener("DOMContentLoaded", function () {
     const button = document.getElementById("read-more-button");
@@ -391,6 +385,8 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+
 
 // JavaScript for handling the search functionality
 const searchInput = document.getElementById('search-map');
