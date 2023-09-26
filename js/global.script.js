@@ -302,6 +302,39 @@ let swiper7 = new Swiper('.swiper-seven', {
 
 });
 
+let mapSwiper1 = new Swiper('.swiper-map-1', {
+	direction: 'horizontal',
+	slidesPerView: 1,
+	spaceBetween: 15,
+	loop: true,
+	autoHeight:true,
+	autoplay: {
+		delay: 250000,
+		disableOnInteraction: true,
+	},
+	pagination: {
+		el: '.custom-pagination-map-1',
+		clickable: true,
+	},
+
+});
+let mapSwiper2 = new Swiper('.swiper-map-2', {
+	direction: 'horizontal',
+	slidesPerView: 1,
+	spaceBetween: 15,
+	loop: true,
+	autoHeight:true,
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: true,
+	},
+	pagination: {
+		el: '.custom-pagination-map-2',
+		clickable: true,
+	},
+
+});
+
 
 var closeButtons = document.querySelectorAll('.header_top_close');
 var elementsToHide = document.querySelectorAll('.header_top');
@@ -359,3 +392,29 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// JavaScript for handling the search functionality
+const searchInput = document.getElementById('search-map');
+const searchResults = document.getElementById('search-results');
+
+searchInput.addEventListener('input', function() {
+    // Clear previous search results
+    searchResults.innerHTML = '';
+    
+    // Get the search query
+    const query = searchInput.value.toLowerCase();
+    
+    // Select all elements with the class "sinav-item"
+    const sinavItems = document.querySelectorAll('.sinav-item');
+    
+    // Loop through your "sinav-item" elements and search for titles
+    sinavItems.forEach(function(item) {
+        const titleElement = item.querySelector('.sinav-title');
+        const title = titleElement.textContent.toLowerCase();
+        
+        if (title.includes(query)) {
+            // Clone the matching element and append it to the results
+            const matchingElement = item.cloneNode(true);
+            searchResults.appendChild(matchingElement);
+        }
+    });
+});

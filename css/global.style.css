@@ -72,8 +72,8 @@ button,
 select,
 textarea,
 label {
-	font-family: Lexend;
-	font-size: 14px;
+	font-family: Lexend , sans-serif;
+	font-size: 18px;
 	color: var(--color-secondary);
 	line-height: 1.4;
 	font-weight: 600;
@@ -130,6 +130,7 @@ body {
 	line-height: 1.4;
 	font-weight: 400;
 	box-sizing: border-box;
+	font-display: fallback;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -511,12 +512,12 @@ nav.menu ul.main-menu>li li a {
 
 .s-text {
 	color: var(--color-secondary) !important;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 .s-text span {
 	color: var(--color-secondary) !important;
-	font-size: 11px;
+	font-size: 16px;
 }
 
 .b-text {
@@ -1148,7 +1149,7 @@ select.form-element {
 }
 
 .expandable-header .list-title {
-	font-size: 13px;
+	font-size: 15px;
 	line-height: 18px;
 	padding-left: 70px;
 	margin: 0;
@@ -1698,11 +1699,13 @@ select.form-element {
 .form-label-divider span {
 	position: relative;
 	top: -8px;
+	font-size: 20px;
 	font-weight: 700;
 	display: inline-block;
 	background-color: white;
 	color: var(--color-secondary) !important;
 	padding: 0 10px;
+	margin-bottom: 15px;
 }
 
 /*end of part 15----------------------------------------------------*/
@@ -2556,7 +2559,7 @@ select.form-element {
 
 .title-main {
 	margin: 10px 0px;
-	font-size: 16px;
+	font-size: 20px;
 }
 
 .product-item .product-image {
@@ -3579,10 +3582,10 @@ footer ul li,
 
 footer ul li a i,
 .social-links ul li a i {
-	background: #f7f7f7;
-	width: 35px;
-	height: 35px;
-	line-height: 35px !important;
+    background: #f7f7f7;
+    width: 45px;
+    height: 45px;
+    line-height: 44px !important;
 	border-radius: 50%;
 }
 
@@ -3917,9 +3920,86 @@ a.rbt-btn-link::after {
 	animation: slide-progress 3s cubic-bezier(0.3, 0, 0.3, 1) forwards;
 }
 
+.custom-pagination-map-1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.custom-pagination-map-1 .swiper-pagination-bullet {
+	width: 11px;
+	height: 11px;
+	margin: 0 5px;
+	background-color: var(--color-gray-side);
+	border-radius: 10px;
+	cursor: pointer;
+	opacity: .2;
+	transition: all .3s;
+	position: relative;
+	overflow: hidden;
+}
+
+
+
+.custom-pagination-map-1 .swiper-pagination-bullet-active {
+	background-color: #bdbdbd;
+	opacity: 1;
+	width: 40px;
+	height: 11px;
+}
+
+.custom-pagination-map-1 .swiper-pagination-bullet-active::before {
+	background-color: var(--color-primary);
+	width: 40px;
+	height: 11px;
+	opacity: 1;
+	-webkit-animation: slide-progress 3s cubic-bezier(0.3, 0, 0.3, 1) forwards;
+	animation: slide-progress 3s cubic-bezier(0.3, 0, 0.3, 1) forwards;
+}
+
+
 .swiper-paused .swiper-pagination-bullet-active::before {
 	-webkit-animation-play-state: paused;
 	animation-play-state: paused;
+}
+
+.custom-pagination-map-2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.custom-pagination-map-2 .swiper-pagination-bullet {
+	width: 11px;
+	height: 11px;
+	margin: 0 5px;
+	background-color: var(--color-gray-side);
+	border-radius: 10px;
+	cursor: pointer;
+	opacity: .2;
+	transition: all .3s;
+	position: relative;
+	overflow: hidden;
+}
+
+
+
+.custom-pagination-map-2 .swiper-pagination-bullet-active {
+	background-color: #bdbdbd;
+	opacity: 1;
+	width: 40px;
+	height: 11px;
+}
+
+.custom-pagination-map-2 .swiper-pagination-bullet-active::before {
+	background-color: var(--color-primary);
+	width: 40px;
+	height: 11px;
+	opacity: 1;
+	-webkit-animation: slide-progress 3s cubic-bezier(0.3, 0, 0.3, 1) forwards;
+	animation: slide-progress 3s cubic-bezier(0.3, 0, 0.3, 1) forwards;
 }
 
 .custom-pagination-7 {
@@ -4277,9 +4357,12 @@ a.rbt-btn-link::after {
 }
 
 .footer-social {
-	font-size: 18px;
+	font-size: 23px;
 }
-
+.space{
+	margin-top: 22px;
+	margin-bottom: 15px;
+}
 .form-row i {
 	font-size: 14px;
 }
@@ -4364,7 +4447,9 @@ option {
 .add-margin {
 	height: 218px;
 }
-
+.add-m{
+	margin-top: 25px;
+}
 .col-50 {
 	width: 100%;
 	border-radius: 10px;
@@ -4652,4 +4737,129 @@ textarea::placeholder{
 }
 .cont{
 	width: 40%;
+}
+.wrapper.bay{
+	font-size: 18px!important;
+}
+.sa-text{
+	font-size: 9px;
+}
+
+/* tron */
+.rbt-new-badge.rbt-new-badge-one {
+    color: #192335;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 19px 24px 21px 20px;
+    box-shadow: 0 15px 40px #d2d3e2a1;
+    background: #fff;
+    border-radius: 4px;
+}
+.rbt-new-badge {
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+}
+.rbt-new-badge.rbt-new-badge-one:before {
+    position: absolute;
+    top: 50%;
+    right: -19px;
+    left: -19px;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    transform: translateY(-50%);
+    height: 45px;
+    width: -moz-calc(100% + 38px);
+    width: calc(100% + 38px);
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-box-shadow: 0 0 29px #d1d3ed63;
+    box-shadow: 0 0 29px #d1d3ed63;
+    z-index: -1;
+    content: "";
+    -webkit-clip-path: polygon(100% 0, 97% 50%, 100% 100%, 0 100%, 3% 50%, 0 0);
+    clip-path: polygon(100% 0, 97% 50%, 100% 100%, 0 100%, 3% 50%, 0 0);
+}
+.add-top-m{
+	margin-top: 100px;
+}
+.center{
+	text-align: center;
+}
+.theme-gradient {
+    background: linear-gradient(90deg, #ef0107, #192335);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.001);
+}
+.green-1{
+	color:green;
+	margin-right: 6px;
+}
+.nolistStyle{
+	list-style: none;
+	padding-left:10px!important;
+}
+.sinav-item{
+	display: flex;
+	flex-direction: column;
+
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	transition: box-shadow .6s ease;
+}
+.sinav-item:hover{
+	box-shadow: inset 4px 4px 6px 4px rgba(0,0,0,0.1);
+	transition: box-shadow .6s ease;
+}
+
+.sinav-items i{
+font-size: 40px;
+}
+.sinav-tel{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.sinav-tel strong:hover{
+	color: var(--color-primary);
+}
+.sinav-top{
+	display: flex;
+	gap: 16px;
+	align-items: flex-end;
+	margin-bottom: 21px;
+}
+.sinav-inner{
+	padding: 23px;
+	display: flex;
+    flex-direction: column;
+	align-items: start;
+}
+.sinav-title{
+	font-size: 23px;
+	font-weight: bold;
+}
+.sinav-map{
+	font-size: 	15px;
+	text-align: start;
+}
+.sinav-map:hover{
+color: var(--color-primary);
+}
+#search-results{
+	padding-left: 0!important;
+}
+#search-map{
+	display: flex;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	border: 1px solid var(--color-gray-side);
+	border-radius: 17px;
+	padding: 5px;
+}
+#search-map:focus{
+	border: 1px solid var(--color-gray-side);
+}
+.search-map-hr{
+	margin-bottom: 30px;
 }
