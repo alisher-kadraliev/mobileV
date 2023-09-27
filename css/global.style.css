@@ -4925,7 +4925,7 @@ textarea::placeholder {
 	list-style: none;
 	flex-direction: column;
 	gap: 10px;
-	padding-left: 4px!important;
+	padding-left: 4px !important;
 	font-size: 15px !important;
 }
 
@@ -4936,22 +4936,110 @@ textarea::placeholder {
 .baslık {
 	font-size: 30px !important;
 }
+
 .course-text {
 	font-size: 18px;
 }
+
 .course-inner {
-display: flex;
-gap: 3px;
-font-size: 16px;
+	display: flex;
+	gap: 3px;
+	font-size: 16px;
 }
-.padding-content-course{
+
+.padding-content-course {
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
 	padding-top: 13px;
 	padding-bottom: 13px;
-    padding-left: 16px;
+	padding-left: 16px;
 }
-.title-course{
-	font-size: 22px!important;
+
+.title-course {
+	font-size: 22px !important;
+}
+
+.ozel {
+	background: var(--color-secondary);
+	display: flex;
+	gap: 6px;
+	width: 48%;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	border-radius: 10px;
+	padding: 10px;
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+/* table */
+.rbt-title-style-3 {
+	margin-bottom: 24px;
+	font-size: 20px;
+	padding-bottom: 20px;
+	border-bottom: 2px solid var(--color-border-2);
+}
+
+.give_top {
+	margin-bottom: 0;
+	padding-bottom: 15px;
+	margin-top: 40px;
+}
+
+.td_red {
+	color: red;
+}
+
+.table_section th,
+td {
+	border: 1px solid black;
+	padding: 8px;
+	text-align: left;
+}
+.table_section table, th, td {
+    border: 1px solid #fff;
+}
+.table_section table {
+    caption-side: bottom;
+    border-collapse: collapse;
+	font-size: 9px;
+}
+.table_section tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.feature-content{
+	display: flex;
+	width: 100%;
+	flex-wrap: nowrap;
+	font-size: 18px;
+
+}
+
+/* ask-us */
+.ask-us{
+	margin-top: 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.ask-us-item:hover{
+	color: var(--color-primary);
+}
+.ask-us-item i{
+font-size: 40px;
+}
+.ask-us-item{
+margin-bottom: 20px;
+}
+.img-milletim img{
+	max-width: 100%;
+	width: 72%;
+	height: auto;
+	display: flex;
+	margin: 19px auto;
 }
