@@ -2841,7 +2841,6 @@ select.form-element {
 	background: rgba(255, 255, 255, .2);
 	padding: 20px 10px;
 	border-radius: 10px;
-	margin-bottom: 30px
 }
 
 .st-fact {
@@ -2888,7 +2887,9 @@ select.form-element {
 	line-height: 50px;
 	color: var(--color-primary);
 }
-
+.divider{
+	height: 20px;
+}
 .product-size li a:hover {
 	border: 1px solid #ccc;
 }
@@ -5320,3 +5321,18 @@ transition: .6s ease;
 	transition: .3s ease;
 	transform: scale(1.1);
   }
+.add-m-top{
+	margin-top: 6px;
+}
+.overflow-h{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+
+}
+.col-3-1{
+	width: 40%;
+	float: left;
+}
