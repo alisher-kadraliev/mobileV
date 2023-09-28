@@ -354,6 +354,35 @@ closeButtons.forEach(function (closeButton, index) {
 	}
 });
 
+// JavaScript for handling the search functionality
+const searchInput = document.getElementById('search-map');
+const searchResults = document.getElementById('search-results');
+
+searchInput.addEventListener('input', function() {
+    // Clear previous search results
+    searchResults.innerHTML = '';
+    
+    // Get the search query
+    const query = searchInput.value.toLowerCase();
+    
+    // Select all elements with the class "sinav-item"
+    const sinavItems = document.querySelectorAll('.sinav-item');
+    
+    // Loop through your "sinav-item" elements and search for titles
+    sinavItems.forEach(function(item) {
+        const titleElement = item.querySelector('.sinav-title');
+        const title = titleElement.textContent.toLowerCase();
+        
+        if (title.includes(query)) {
+            // Clone the matching element and append it to the results
+            const matchingElement = item.cloneNode(true);
+            searchResults.appendChild(matchingElement);
+        }
+    });
+});
+
+
+
 
 function googleTranslateElementInit() {
 	new google.translate.TranslateElement({ pageLanguage: 'tr', includedLanguages: 'ar,en,tr,fr,de,ru', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
@@ -388,29 +417,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-// JavaScript for handling the search functionality
-const searchInput = document.getElementById('search-map');
-const searchResults = document.getElementById('search-results');
-
-searchInput.addEventListener('input', function() {
-    // Clear previous search results
-    searchResults.innerHTML = '';
-    
-    // Get the search query
-    const query = searchInput.value.toLowerCase();
-    
-    // Select all elements with the class "sinav-item"
-    const sinavItems = document.querySelectorAll('.sinav-item');
-    
-    // Loop through your "sinav-item" elements and search for titles
-    sinavItems.forEach(function(item) {
-        const titleElement = item.querySelector('.sinav-title');
-        const title = titleElement.textContent.toLowerCase();
-        
-        if (title.includes(query)) {
-            // Clone the matching element and append it to the results
-            const matchingElement = item.cloneNode(true);
-            searchResults.appendChild(matchingElement);
-        }
-    });
-});

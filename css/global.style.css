@@ -101,7 +101,6 @@ label {
 :root {
 	--color-primary: #eb1d24;
 	--color-primary-light: #fa2d2d;
-	/* #2f57ef */
 	--color-secondary: #192335;
 	--color-gray: #f7f9fa;
 	--color-gray-side: #4c4b4b;
@@ -115,6 +114,12 @@ label {
 	--duration: 60s;
 	--scroll-start: 0;
 	--scroll-end: calc(-100% - var(--gap));
+	--white-opacity: #ffffff21;
+	--transition: 0.3s;
+	--color-white: #ffffff;
+	--default-y: 0px;
+	 --icon-color-default: white;
+	 --icon-background-height: 19px;
 }
 
 /*-------------------------------------------------------------------
@@ -4999,18 +5004,24 @@ td {
 	padding: 8px;
 	text-align: left;
 }
-.table_section table, th, td {
-    border: 1px solid #fff;
+
+.table_section table,
+th,
+td {
+	border: 1px solid #fff;
 }
+
 .table_section table {
-    caption-side: bottom;
-    border-collapse: collapse;
+	caption-side: bottom;
+	border-collapse: collapse;
 	font-size: 9px;
 }
+
 .table_section tr:nth-child(even) {
-    background-color: #f2f2f2;
+	background-color: #f2f2f2;
 }
-.feature-content{
+
+.feature-content {
 	display: flex;
 	width: 100%;
 	flex-wrap: nowrap;
@@ -5019,7 +5030,7 @@ td {
 }
 
 /* ask-us */
-.ask-us{
+.ask-us {
 	margin-top: 15px;
 	display: flex;
 	flex-direction: column;
@@ -5027,19 +5038,285 @@ td {
 	justify-content: center;
 	text-align: center;
 }
-.ask-us-item:hover{
+
+.ask-us-item:hover {
 	color: var(--color-primary);
 }
-.ask-us-item i{
-font-size: 40px;
+
+.ask-us-item i {
+	font-size: 40px;
 }
-.ask-us-item{
-margin-bottom: 20px;
+
+.ask-us-item {
+	margin-bottom: 20px;
 }
-.img-milletim img{
+
+.img-milletim img {
 	max-width: 100%;
 	width: 72%;
 	height: auto;
 	display: flex;
 	margin: 19px auto;
 }
+
+.title-main strong {
+	color: var(--color-primary);
+}
+
+/* Video Player button */
+.video-popup-wrapper {
+	position: relative;
+}
+
+.video-popup-wrapper .position-to-top {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+}
+
+.video-popup-wrapper .rbt-btn.rounded-player:hover {
+	transform: translate(-50%, -50%) scale(1.1);
+}
+
+@keyframes ripple {
+	0% {
+		-webkit-transform: scale(0.9);
+		transform: scale(0.9);
+		opacity: 1;
+	}
+
+	75% {
+		-webkit-transform: scale(1.9);
+		transform: scale(1.9);
+		opacity: 0.5;
+	}
+
+	100% {
+		-webkit-transform: scale(2.3);
+		transform: scale(2.3);
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes btnIconRipple {
+	0% {
+		border-width: 4px;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+
+	80% {
+		border-width: 1px;
+		-webkit-transform: scale(1.35);
+		transform: scale(1.35);
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes btnIconRipple {
+	0% {
+		border-width: 4px;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+
+	80% {
+		border-width: 1px;
+		-webkit-transform: scale(1.35);
+		transform: scale(1.35);
+	}
+
+	100% {
+		opacity: 0;
+	}
+}
+
+/* button */
+.btn-round-white-opacity {
+	padding: 0;
+	border: 0 none;
+	background: var(--white-opacity);
+	width: 35px;
+	height: 35px;
+	border-radius: 100%;
+	color: #fff;
+	font-size: 16px;
+	line-height: 37px;
+}
+
+.rbt-btn.rounded-player-2 .play-icon {
+	position: absolute;
+	display: block;
+	top: 50%;
+	left: 50%;
+	transform: translate(-10%, -10%);
+}
+
+.rbt-btn.rounded-player-2 .play-icon::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	transform: translate(-6px, -9px);
+	border-top: 9px solid transparent;
+	border-bottom: 9px solid transparent;
+	border-left: 15px solid var(--color-primary);
+}
+
+.rbt-btn.rounded-player-2.btn-theme-color .play-icon::before {
+	border-left: 15px solid var(--color-white);
+}
+
+/* Video Player button */
+.w-100 {
+	width: 100%;
+}
+
+.add-m-btn {
+	margin-bottom: 9px;
+}
+
+.rbt-btn.with-animation::after,
+.rbt-btn.with-animation::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: -1;
+	bottom: 0;
+	left: 0;
+	-webkit-transition: var(--transition);
+	transition: var(--transition);
+	border-radius: 50%;
+	border: 1.5px solid var(--color-white);
+}
+
+.rbt-btn.with-animation::after {
+	-webkit-animation: ripple 2s linear 1s infinite;
+	animation: ripple 2s linear 1s infinite;
+}
+
+.rbt-radius {
+	border-radius: 6px !important;
+}
+
+.video-popup-wrapper {
+	position: relative;
+}
+
+.rbt-btn.rounded-player-2:hover {
+	color: inherit;
+	background: var(--color-white);
+}
+
+.video-popup-wrapper .position-to-top {
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
+}
+
+.rbt-btn.rounded-player-2 {
+	border: 0;
+	width: 80px;
+	height: 80px;
+	margin-left: -40px;
+	margin-top: -40px;
+	transition: all 1s cubic-bezier(0, 0, 0.2, 1);
+	position: relative;
+	border-radius: 100%;
+	background: var(--color-white);
+	display: inline-block;
+	padding: 0;
+}
+
+@media(max-width: 575px) {
+	.rbt-btn.rounded-player-2 {
+		width: 40px;
+		height: 40px;
+		line-height: 40px;
+	}
+}
+
+@media(max-width: 767px) {
+	.rbt-btn.rounded-player-2 {
+		width: 50px;
+		height: 50px;
+	}
+}
+.rbt-btn.with-animation::before {
+    -webkit-animation: ripple 2s linear infinite;
+    animation: ripple 2s linear infinite;
+}
+.video-popup-wrapper .position-to-top {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+
+
+/* favorite button */
+
+  .top_title{
+	display: flex;
+	gap: 20px;
+	align-items: center;
+  }
+.bookmark{
+	display: flex;
+	gap: 6px;
+	align-items: flex-start;
+	justify-content: center;
+	border-radius: 10px;
+	margin: 0 auto;
+	border: none;
+	background: white;
+	margin-bottom: 15px;
+	padding: 6px;
+	width: 100%;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);}
+.bookmark svg{
+width: 25px;
+height: 25px;
+
+}
+
+.bookmark svg .filled{
+fill: gray;
+}
+.bookmark svg .default{
+fill: gray;
+}
+.bookmark svg .corner{
+fill: gray;
+}
+.bookmark.active_icon svg .filled{
+fill: black;
+transition: .6s ease;
+}
+.bookmark.active_icon svg .default{
+fill: black;
+transition: .6s ease;
+}
+.bookmark.active_icon svg .corner{
+fill: black;
+transition: .6s ease;
+}
+.bookmark.active_icon .icon{
+	position: relative;
+	z-index: 1;
+	transition: .3s ease;
+	transform: scale(1.1);
+  }

@@ -22,10 +22,12 @@
     <link rel="stylesheet" type="text/css" href="css/global.style.css">
 
     <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/plyr.css">
 
     <link rel="stylesheet" type="text/css" href="plugins/turbo-slider/turbo.css">
 
     <script src="js/jquery-3.2.1.min.js"></script>
+
 
 </head>
 
@@ -173,16 +175,42 @@
 
                     <div class="form-mini-divider"></div>
                     <div class="form-mini-divider"></div>
-                    <button class="button circle block orange"><i class="fa fa-shopping-basket"></i> Sepete
+                    <button class="button circle block add-m-btn orange"><i class="fa fa-shopping-basket"></i> Sepete
                         ekle</button>
-
+                    <button class="bookmark" id="bookmark" onclick="myFav()">
+                        <div class="icon">
+                            <svg viewBox="0 0 36 36">
+                                <path class="filled"
+                                    d="M26 6H10V18V30C10 30 17.9746 23.5 18 23.5C18.0254 23.5 26 30 26 30V18V6Z" />
+                                <path class="default"
+                                    d="M26 6H10V18V30C10 30 17.9746 23.5 18 23.5C18.0254 23.5 26 30 26 30V18V6Z" />
+                                <path class="corner"
+                                    d="M10 6C10 6 14.8758 6 18 6C21.1242 6 26 6 26 6C26 6 26 6 26 6H10C10 6 10 6 10 6Z" />
+                            </svg>
+                        </div>
+                        <span>Favorilere ekle</span>
+                    </button>
                 </section>
-
+<script>
+    function myFav() {
+    var element = document.getElementById("bookmark");
+    element.classList.toggle("active_icon");
+}	
+</script>
+                <section class="container">
+                    <div class="video-popup-wrapper">
+                        <img class="w-100 rbt-radius lozad" data-src="img/assets/video-01.jpg"
+                            alt="Kurslar ile ilgili video">
+                        <a class="rbt-btn rounded-player-2 popup-video position-to-top with-animation"
+                            href="https://www.youtube.com/watch?v=nA1Aqp0sPQo">
+                            <span class="play-icon"></span>
+                        </a>
+                    </div>
+                </section>
                 <section class="container">
                     <div class="section-head">
                         <h4 class="title-main title-course">Kursun Tanımı</h4>
                     </div>
-
                     <p class="course-text">Emlak sektöründe çalışmak isteyenler için düzenlenen bir eğitim programıdır.
                         Bu kurslar emlak sektörü hakkında temel bilgileri yasal düzenlemeleri emlak piyasası analizini
                         müşteri ilişkileri yönetimini pazarlama stratejilerini ve satış tekniklerini öğretilir.
@@ -551,6 +579,16 @@
 
                 </section>
                 <section class="container">
+                    <div class="video-popup-wrapper">
+                        <img class="w-100 rbt-radius lozad" data-src="img/assets/video-01.jpg"
+                            alt="Kurslar ile ilgili video">
+                        <a class="rbt-btn rounded-player-2 popup-video position-to-top with-animation"
+                            href="https://www.youtube.com/watch?v=nA1Aqp0sPQo">
+                            <span class="play-icon"></span>
+                        </a>
+                    </div>
+                </section>
+                <section class="container">
                     <div class="section-head">
                         <h4 class="title-main title-course">Eğitimi Veren Şubeler</h4>
                     </div>
@@ -677,7 +715,7 @@
                 </section>
                 <section class="container">
                     <div class="section-head">
-                        <h4 class="title-main">Benzeyen Kursları  <strong> Mesleki Eğitim</strong></h4>
+                        <h4 class="title-main">Benzeyen Kursları <strong> Mesleki Eğitim</strong></h4>
                         <a class="c-btn" href="product-list.html">devamı</a>
                     </div>
                     <div class="product-two-column">
@@ -1273,6 +1311,7 @@
     <script>
         handleFormSubmission("form-11", "4"); 
     </script>
+    <script src="js/plyr.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/lozad.js"></script>
