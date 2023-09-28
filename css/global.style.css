@@ -118,8 +118,8 @@ label {
 	--transition: 0.3s;
 	--color-white: #ffffff;
 	--default-y: 0px;
-	 --icon-color-default: white;
-	 --icon-background-height: 19px;
+	--icon-color-default: white;
+	--icon-background-height: 19px;
 }
 
 /*-------------------------------------------------------------------
@@ -2887,9 +2887,11 @@ select.form-element {
 	line-height: 50px;
 	color: var(--color-primary);
 }
-.divider{
+
+.divider {
 	height: 20px;
 }
+
 .product-size li a:hover {
 	border: 1px solid #ccc;
 }
@@ -4775,7 +4777,7 @@ textarea::placeholder {
 }
 
 .sa-text {
-	font-size: 9px;
+	font-size: 13px;
 }
 
 /* tron */
@@ -5254,28 +5256,31 @@ td {
 		height: 50px;
 	}
 }
+
 .rbt-btn.with-animation::before {
-    -webkit-animation: ripple 2s linear infinite;
-    animation: ripple 2s linear infinite;
+	-webkit-animation: ripple 2s linear infinite;
+	animation: ripple 2s linear infinite;
 }
+
 .video-popup-wrapper .position-to-top {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	margin: 0;
 }
 
 
 
 /* favorite button */
 
-  .top_title{
+.top_title {
 	display: flex;
 	gap: 20px;
 	align-items: center;
-  }
-.bookmark{
+}
+
+.bookmark {
 	display: flex;
 	gap: 6px;
 	align-items: flex-start;
@@ -5287,44 +5292,66 @@ td {
 	margin-bottom: 15px;
 	padding: 6px;
 	width: 100%;
-	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);}
-.bookmark svg{
-width: 25px;
-height: 25px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.bookmark:hover {
+	scale: 1.1;
+	transition: .6s ease;
+}
+
+.bookmark svg {
+	width: 25px;
+	height: 25px;
 
 }
 
-.bookmark svg .filled{
-fill: gray;
+.bookmark svg .filled {
+	fill: gray;
+	transition: .6s ease;
 }
-.bookmark svg .default{
-fill: gray;
+
+.bookmark svg .default {
+	fill: gray;
+	transition: .6s ease;
 }
-.bookmark svg .corner{
-fill: gray;
+
+.text-sm-font {
+	font-size: 13px;
 }
-.bookmark.active_icon svg .filled{
-fill: black;
-transition: .6s ease;
+
+.bookmark svg .corner {
+	fill: gray;
+	transition: .6s ease;
 }
-.bookmark.active_icon svg .default{
-fill: black;
-transition: .6s ease;
+
+.bookmark.active_icon svg .filled {
+	fill: black;
+	transition: .6s ease;
 }
-.bookmark.active_icon svg .corner{
-fill: black;
-transition: .6s ease;
+
+.bookmark.active_icon svg .default {
+	fill: black;
+	transition: .6s ease;
 }
-.bookmark.active_icon .icon{
+
+.bookmark.active_icon svg .corner {
+	fill: black;
+	transition: .6s ease;
+}
+
+.bookmark.active_icon .icon {
 	position: relative;
 	z-index: 1;
 	transition: .3s ease;
 	transform: scale(1.1);
-  }
-.add-m-top{
+}
+
+.add-m-top {
 	margin-top: 6px;
 }
-.overflow-h{
+
+.overflow-h {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -5332,7 +5359,49 @@ transition: .6s ease;
 	gap: 8px;
 
 }
-.col-3-1{
+
+.col-3-1 {
 	width: 40%;
 	float: left;
+}
+
+#popup-container {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+}
+
+#popup {
+	margin: 0 10px;
+	position: absolute;
+	top: 10%;
+	left: 0%;
+	background: #fff;
+	padding: 20px;
+	border-radius: 5px;
+	text-align: center;
+	position: relative;
+}
+
+#close-popup {
+	position: absolute;
+	top: -9px;
+	right: 13px;
+	font-size: 35px;
+	cursor: pointer;
+}
+
+#close-popup {
+scale: 1.2;
+}
+
+.add-b {
+	margin-top: 15px;
 }
