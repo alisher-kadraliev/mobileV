@@ -391,9 +391,6 @@ searchInput.addEventListener('input', function() {
     });
 });
 
-
-
-
 function googleTranslateElementInit() {
 	new google.translate.TranslateElement({ pageLanguage: 'tr', includedLanguages: 'ar,en,tr,fr,de,ru', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
 }
@@ -408,9 +405,6 @@ document.addEventListener('mouseenter', event => {
 		activeNavItem.style.animationPlayState = "paused";
 	}
 }, true);
-
-
-
 
 
 function myFav() {

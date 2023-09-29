@@ -1,0 +1,93 @@
+ 
+ 
+ <div class="modal-content">
+        <form action="" id="form-11">
+            <div class="container">
+            <h1 class="text-white">Biz sizi arayalım</h1>
+     
+        </div>
+            <div class="form-content">
+                <div class="form-row-group with-icons">
+                    <div class="form-row no-padding">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <input required type="text" class="form-element" placeholder="İsim Soyisim">
+                    </div>
+                </div>
+
+                <div class="form-mini-divider"></div>
+                <div class="form-row-group with-icons">
+                    <div class="form-row no-padding">
+                        <i class="fa fa-envelope"></i>
+                        <input required type="email" class="form-element" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form-mini-divider"></div>
+                <div class="form-row-group with-icons">
+                    <div class="form-row no-padding">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <input required type="tel" class="form-element" placeholder="Telefon (544) 924 97 26">
+                    </div>
+                </div>
+                <div class="form-mini-divider"></div>
+                <div class="form-row-group with-icons">
+                    <div class="form-row no-padding">
+                        <i class="fa fa-map-o" aria-hidden="true"></i>
+                        <select required class="form-element">
+                            <option value="" selected>Yaşadınız Şehir</option>
+                            <option value="1">English</option>
+                            <option value="1">Spanish</option>
+                            <option value="1">Turkish</option>
+                        </select>
+                    </div>
+                </div>
+              
+                <div class="form-mini-divider"></div>
+                <div class="form-row-group with-icons">
+                    <div class="form-row no-padding">
+                        <i class="fa fa-comments-o" aria-hidden="true"></i>
+                        <textarea required class="form-element" placeholder="Mesajınız"></textarea>
+                    </div>
+                </div>
+                <div class="form-mini-divider"></div>
+                <button type="submit" class="button circle block orange sm-button space ">Gönder</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+
+
+    <div class="cover-back cover-back-body js-cover-back-body"></div>
+   
+     <div class="tabs js-tabs">
+        <div class="tabs-container">
+            <a href="https://api.whatsapp.com/send?phone=123123123123" class="tab-item js-tab-item">
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            </a>
+
+            <a href="tel:1312312" class="tab-item js-tab-item">
+                <i class="fa fa-phone-square" aria-hidden="true"></i>
+            </a>
+
+            <div class="tab-item tab-item--middle js-tab-item js-tab-item-main-control">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+
+            <a id="modal-1" href="#animatedModal" class="tab-item js-tab-item">
+                <i class="fa fa-envelope-open" aria-hidden="true"></i>
+            </a>
+            <div id="animatedModal">
+                <div id="btn-close-modal" class="close-animatedModal">
+                    X
+                </div>
+
+               
+            </div>
+            <a href="#basarı" class="tab-item js-tab-item">
+                <i class="fa fa-linode" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>

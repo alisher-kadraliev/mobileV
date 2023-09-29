@@ -4978,7 +4978,7 @@ textarea::placeholder {
 }
 
 .margin-second {
-	margin-top: 100px;
+	margin-top: 143px;
 }
 
 .info-blog {
@@ -5594,9 +5594,6 @@ td {
 	background-color: 000 !important;
 }
 
-.fa-phone-square {
-	color: red;
-}
 
 /* Animations */
 
@@ -5678,3 +5675,30 @@ td {
 	opacity: .6;
 }
 /* tableft */
+.content-left-side{
+	position: relative;
+    overflow: hidden;
+}
+.container-1{
+position: fixed;
+top: 40%;
+z-index: 500;
+}
+.button-left{
+	position: fixed;
+    left: -100px; /* Initial hidden position */
+    width: 100px;
+    height: 50px;
+	top: 40%;
+    background-color: #007bff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: left 0.3s ease;
+}
+.content-left {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
