@@ -1,25 +1,26 @@
-var tabs = document.querySelector('.js-tabs');
-var tabItems = document.querySelectorAll('.js-tab-item:not(.js-tab-item-main-control)');
-var tabItemMainControl = document.querySelector('.js-tab-item-main-control');
-tabItemMainControl.addEventListener('click', function () {
-    if (tabs.classList.contains('js-tabs-init')) {
-        tabs.classList.remove('js-tabs-init');
-        tabItemMainControl.style.transform = 'rotate(45deg)';
-        for (var i = 0; i < tabItems.length; i++) {
-            tabItems[i].classList.add('js-tab-item-show');
-        }
-    } else {
-        for (var i = 0; i < tabItems.length; i++) {
-            tabItems[i].classList.remove('js-tab-item-show');
-        }
-        setTimeout(function () {
-            tabItemMainControl.style.transform = 'rotate(0deg)';
-            tabs.classList.add('js-tabs-init');
-        }, 2000);
-    }
+const button = document.getElementById('dragButton');
+const content = document.querySelector('.content-left');
+
+let isDragging = false;
+let startPositionX = 0;
+
+button.addEventListener('touchstart', (e) => {
+    isDragging = true;
+    startPositionX = e.touches[0].clientX;
 });
-$("#modal-1").animatedModal({
-    animatedIn: 'fadeInLeft',
-    animatedOut: 'fadeOutRight',
-    color: '#ee3137',
+
+document.addEventListener('touchmove', (e) => {
+    if (!isDragging) return;
+
+    const currentPositionX = e.touches[0].clientX;
+    const difference = currentPositionX - startPositionX;
+
+    button.style.left = `${Math.min(70, Math.max(0, difference))}px`;
+
+    // Allow content to go back to -100 but with a maximum limit of 0
+    content.style.left = `${Math.min(0, Math.max(-100, difference))}px`;
+});
+
+document.addEventListener('touchend', () => {
+    isDragging = false;
 });

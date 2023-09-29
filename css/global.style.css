@@ -5502,10 +5502,11 @@ td {
 }
 
 #btn-close-modal {
-	width: 100%;
-	text-align: center;
+	text-align: end;
 	cursor: pointer;
 	color: #fff;
+	font-size: 30px;
+	padding-right: 15px;
 }
 
 
@@ -5702,7 +5703,6 @@ td {
 	left: 0;
 	width: 100px;
 	height: 50px;
-
 	color: black;
 	display: flex;
 	align-items: center;
@@ -5713,47 +5713,86 @@ td {
 	padding: 10px 20px;
 	border-radius: 5px;
 	font-size: 16px;
-
 	transition: background-color 0.3s ease, transform 0.1s ease;
-	/* Smooth transitions */
+}
+.button-left.button-left-open {
+	position: absolute;
+	left: -70px;
+	width: 100px;
+	height: 50px;
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: left 0.3s ease;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 16px;
+	transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
 .bookmark-side {
-	position: relative; 
-    height: 47px;
-    width: 38px;
-    padding: 0px; 
-    -webkit-transform: rotate(0deg) skew(0deg); 
-    transform: rotate(270deg) skew(0deg); 
-    border-left: 25px solid red; 
-    border-right: 25px solid red; 
-    border-bottom: 25px solid transparent; 
+	position: relative;
+	height: 63px;
+	width: 38px;
+	padding: 0px;
+	-webkit-transform: rotate(0deg) skew(0deg);
+	transform: rotate(270deg) skew(0deg);
+	border-left: 25px solid red;
+	border-right: 25px solid red;
+	border-bottom: 25px solid transparent;
 }
 
 
 
-.button-left:active {
-	transform: translateY(1px);
-	/* Slight downward push effect */
-}
 
 .content-left {
 	position: absolute;
 	left: -100px;
-	/* Initial hidden position */
 	width: 65px;
-	height: 186px;
-	background-color: #f0f0f0;
+	height: 256px;
+	border-radius: 20px;
+	background-color: #f0f0f0a9;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	transition: left 0.3s ease;
-
-	top: -65px;
+	top: -101px;
+}
+.content-left.content-left-open{
+	position: absolute;
+	left: 0px;
+	width: 65px;
+	height: 256px;
+	border-radius: 20px;
+	background-color: #f0f0f0a9;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: left 0.3s ease;
+	top: -101px;
 }
 
 .nav-slide-content {
 	display: flex;
-	gap: 8px;
+	gap: 30px;
 	flex-direction: column;
+}
+
+.nav-slide-content i {
+	font-size: 30px;
+}
+
+.nav-slide-content .fa-phone-square {
+	color: red;
+}
+
+.nav-slide-content .fa-envelope-open {
+	color: purple;
+}
+
+.nav-slide-content .fa-linode {
+	color: black;
 }
