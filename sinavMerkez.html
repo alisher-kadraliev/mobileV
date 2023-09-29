@@ -179,6 +179,7 @@
 							</div>
 							<div class="custom-pagination-map-1 add-m"></div>
 						</div>
+						<div class="form-divider"></div>
 						<div class="sinav-content swiper swiper-map-2">
 							<div class="sinav-items swiper-wrapper">
 								<div class="sinav-item swiper-slide">
@@ -256,10 +257,11 @@
 
 					</ul>
 					<form action="" id="form-3">
+
 						<div class="form-divider"></div>
 						<div class="form-label-divider "><span>Ön Başvuru Formu</span></div>
 						<div class="form-divider"></div>
-
+    <div class="form-content">
 						<div class="form-row-group with-icons">
 							<div class="form-row no-padding">
 								<i class="fa fa-user" aria-hidden="true"></i>
@@ -322,19 +324,20 @@
 							</div>
 						</div>
 						<div class="form-mini-divider"></div>
-
 						<div class="form-row-group cont">
 							<div class="form-row no-padding">
-								<input type="text" placeholder='2 + 2 nedir?' class="form-element" name="captcha-form-3"
-									id="captcha-form-3" required>
+								<label for="captcha-form-3" id="captcha-label-3"> </label>
+								<input type="text" placeholder='Cevab' class="form-element"
+									name="captcha-form-3" id="captcha-form-3" required>
 							</div>
 						</div>
 
-
 						<div class="form-mini-divider"></div>
 						<button type="submit" class="button circle block orange sm-button space">Gönder</button>
+						</div>
 					</form>
 				</section>
+				<div class="form-divider"></div>
 				<section class="container">
 					<div class="form-divider"></div>
 					<div class="form-label-divider"><span>Herhangi bir sorun var mı</span></div>
@@ -494,7 +497,20 @@
 
 	<script src="js/cap.js"></script>
 	<script>
-		handleFormSubmission("form-3", "4"); 
+	  function generateRandomCaptcha() {
+		const num1 = Math.floor(Math.random() * 10); // Random number between 0 and 100
+		const num2 = Math.floor(Math.random() * 10); // Another random number
+		const operators = ['+', '-', '*']; // List of operators for variety
+		const operator = operators[Math.floor(Math.random() * operators.length)]; // Random operator
+		const result = eval(`${num1} ${operator} ${num2}`); // Evaluate the expression
+		
+		const captchaLabel = document.getElementById("captcha-label-3");
+		captchaLabel.textContent = `${num1} ${operator} ${num2} nedir?`;
+		return result.toString(); // Convert the result to string for comparison
+	  }
+	
+	  const correctAnswer = generateRandomCaptcha();
+	  handleFormSubmission("form-3", correctAnswer);
 	</script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 	<script src="js/swiper.min.js"></script>

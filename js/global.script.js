@@ -331,7 +331,17 @@ let mapSwiper2 = new Swiper('.swiper-map-2', {
 	},
 
 });
-
+let courseDetails = new Swiper('.swiper-course', {
+	direction: 'horizontal',
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: true,
+	},
+	pagination: {
+		el: '.custom-pagination-course', // Use your custom pagination selector
+		clickable: true, // Enable bullet click
+	},
+})
 
 var closeButtons = document.querySelectorAll('.header_top_close');
 var elementsToHide = document.querySelectorAll('.header_top');
@@ -400,19 +410,10 @@ document.addEventListener('mouseenter', event => {
 }, true);
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const button = document.getElementById("read-more-button");
-    const hiddenContent = document.querySelector(".hidden-content");
-
-    button.addEventListener("click", function () {
-        if (hiddenContent.style.display === "none" || hiddenContent.style.display === "") {
-            hiddenContent.style.display = "block";
-            button.textContent = "Geri kapat";
-        } else {
-            hiddenContent.style.display = "none";
-            button.textContent = "Devamı oku";
-        }
-    });
-});
 
 
+
+function myFav() {
+	var element = document.getElementById("bookmark");
+	element.classList.toggle("active_icon");
+}	

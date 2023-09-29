@@ -25,10 +25,95 @@
     <link rel="stylesheet" href="css/plyr.css">
 
     <link rel="stylesheet" type="text/css" href="plugins/turbo-slider/turbo.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
 
-    <script src="js/jquery-3.2.1.min.js"></script>
+
 </head>
+
 <body>
+
+    <div class="cover-back cover-back-body js-cover-back-body"></div>
+    <div class="tabs js-tabs">
+        <div class="tabs-container">
+            <a href="https://api.whatsapp.com/send?phone=123123123123" class="tab-item js-tab-item">
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            </a>
+
+            <a href="tel:1312312" class="tab-item js-tab-item">
+                <i class="fa fa-phone-square" aria-hidden="true"></i>
+            </a>
+
+            <div class="tab-item tab-item--middle js-tab-item js-tab-item-main-control">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+            </div>
+
+            <a id="modal-1" href="#animatedModal" class="tab-item js-tab-item">
+                <i class="fa fa-envelope-open" aria-hidden="true"></i>
+            </a>
+            <div id="animatedModal">
+                <div id="btn-close-modal" class="close-animatedModal">
+                    X
+                </div>
+
+                <div class="modal-content">
+                    <form action="" id="form-11">
+                        <div class="container">
+                        <h1 class="text-white">Biz sizi arayalım</h1>
+                 
+                    </div>
+                        <div class="form-content">
+                            <div class="form-row-group with-icons">
+                                <div class="form-row no-padding">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    <input required type="text" class="form-element" placeholder="İsim Soyisim">
+                                </div>
+                            </div>
+
+                            <div class="form-mini-divider"></div>
+                            <div class="form-row-group with-icons">
+                                <div class="form-row no-padding">
+                                    <i class="fa fa-envelope"></i>
+                                    <input required type="email" class="form-element" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="form-mini-divider"></div>
+                            <div class="form-row-group with-icons">
+                                <div class="form-row no-padding">
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <input required type="tel" class="form-element" placeholder="Telefon (544) 924 97 26">
+                                </div>
+                            </div>
+                            <div class="form-mini-divider"></div>
+                            <div class="form-row-group with-icons">
+                                <div class="form-row no-padding">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i>
+                                    <select required class="form-element">
+                                        <option value="" selected>Yaşadınız Şehir</option>
+                                        <option value="1">English</option>
+                                        <option value="1">Spanish</option>
+                                        <option value="1">Turkish</option>
+                                    </select>
+                                </div>
+                            </div>
+                          
+                            <div class="form-mini-divider"></div>
+                            <div class="form-row-group with-icons">
+                                <div class="form-row no-padding">
+                                    <i class="fa fa-comments-o" aria-hidden="true"></i>
+                                    <textarea required class="form-element" placeholder="Mesajınız"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-mini-divider"></div>
+                            <button type="submit" class="button circle block orange sm-button space ">Gönder</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <a href="#basarı" class="tab-item js-tab-item">
+                <i class="fa fa-linode" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
     <div class="wrapper">
         <div class="nav-menu">
             <nav class="menu">
@@ -132,8 +217,8 @@
                     <div class="header_bottom">
                         <div class="header_bottom_left">
                             <a href="index.html">
-                            <img class="header-img lozad" data-src="img/assets/logo-removebg-preview.png" alt="">
-                        </a>
+                                <img class="header-img lozad" data-src="img/assets/logo-removebg-preview.png" alt="">
+                            </a>
                         </div>
                         <div class="header_bottom_right">
                             <div class="search-button" data-search="open"><i class="fa fa-search"></i></div>
@@ -180,9 +265,23 @@
             <main class="margin-second">
 
                 <section class="container">
-                    <div class="swiper-slide"><img src="img/product/p6.jpg" alt=""></div>
+                    <div class="swiper swiper-course">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="img/product/p6.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/product/p6.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="img/product/p6.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="custom-pagination-course"></div>
+                    </div>
                     <div class="clear"></div>
-                    <div class="ozel"> <i class="fa fa-star-o" aria-hidden="true"></i>Sertifikalı Kurs</div>
+
+                    <div class="ozel"> ✅ Sertifikalı Kurs</div>
                     <h1 class="product-view-title b-text baslık">Emlak Danışmanlığı</h1>
                     <p class="course-text">Lezzetin sırlarını keşfedin ve mutfakta bir usta olun. Aşçılık Sertifika
                         Programı ile yemek yapma
@@ -210,181 +309,182 @@
                         <span>Favorilere ekle</span>
                     </button>
                 </section>
-<script>
-    function myFav() {
-    var element = document.getElementById("bookmark");
-    element.classList.toggle("active_icon");
-}	
-</script>
+                <div class="form-divider"></div>
                 <section class="container">
-                    <div class="video-popup-wrapper">
-                        <img class="w-100 rbt-radius lozad" data-src="img/assets/video-01.jpg"
-                            alt="Kurslar ile ilgili video">
-                        <a class="rbt-btn rounded-player-2 popup-video position-to-top with-animation"
-                            href="https://www.youtube.com/watch?v=nA1Aqp0sPQo">
-                            <span class="play-icon"></span>
-                        </a>
-                    </div>
+                    <iframe class="iframe-course"
+                        src="https://www.youtube.com/embed/ebB3Q6GSTrYXV?autoplay=1&mute=1&controls=0">
+                    </iframe>
                 </section>
                 <section class="container">
-                    <div class="section-head">
-                        <h4 class="title-main title-course">Kursun Tanımı</h4>
+                    <div class="form-divider"></div>
+                    <div class="form-divider"></div>
+                    <div class="form-label-divider "><span>Platformuz ne sağlıyor</span></div>
+                    <div class="form-divider"></div>
+                    <div class="content-box">
+                        <p class="course-text">Emlak sektöründe çalışmak isteyenler için düzenlenen bir eğitim
+                            programıdır.
+                            Bu kurslar emlak sektörü hakkında temel bilgileri yasal düzenlemeleri emlak piyasası
+                            analizini
+                            müşteri ilişkileri yönetimini pazarlama stratejilerini ve satış tekniklerini öğretilir.
+                        </p>
+                        <p class="course-text"> Emlakçılık kursları emlakçı olmak isteyenler için önemli bir başlangıç
+                            noktasıdır. Kurslar emlak
+                            piyasasının işleyişini ve müşterilerin ihtiyaçlarını anlamak için gereken becerileri
+                            öğretir.
+                            Sosyal Medya Hesaplarımızdan .Kurs Paylaşımlarımızı Görebilirsiniz</p>
                     </div>
-                    <p class="course-text">Emlak sektöründe çalışmak isteyenler için düzenlenen bir eğitim programıdır.
-                        Bu kurslar emlak sektörü hakkında temel bilgileri yasal düzenlemeleri emlak piyasası analizini
-                        müşteri ilişkileri yönetimini pazarlama stratejilerini ve satış tekniklerini öğretilir.
-
-                        Emlakçılık kursları emlakçı olmak isteyenler için önemli bir başlangıç noktasıdır. Kurslar emlak
-                        piyasasının işleyişini ve müşterilerin ihtiyaçlarını anlamak için gereken becerileri öğretir.
-                        Sosyal Medya Hesaplarımızdan .Kurs Paylaşımlarımızı Görebilirsiniz</p>
                 </section>
 
                 <div class="clear"></div>
 
                 <section class="container">
-                    <div class="section-head">
-                        <h4 class="title-main title-course">Kurs içeriği</h4>
-                    </div>
-                    <div class="expandable-item accordion" data-group="accordion2">
-                        <div class="expandable-header">
-                            <i class="list-icon fa fa-adjust"></i>
-                            <h3 class="list-title">Kurs Temelleri</h3>
-                            <i class="list-arrow fa fa-angle-down"></i>
-                        </div>
-                        <div class="expandable-content">
-                            <div class="padding-content-course">
-                                <div class="course-inner">
-                                    <div class="course-left">
-                                        <strong>1.Modül: </strong>
+                    <div class="form-divider"></div>
+                    <div class="form-divider"></div>
+                    <div class="form-label-divider "><span>Kurs içeriği</span></div>
+                    <div class="form-divider"></div>
+                    <div class="content-box">
+                        <div class="expandable-item accordion" data-group="accordion2">
+                            <div class="expandable-header">
+                                <i class="list-icon fa fa-adjust"></i>
+                                <h3 class="list-title">Kurs Temelleri</h3>
+                                <i class="list-arrow fa fa-angle-down"></i>
+                            </div>
+                            <div class="expandable-content">
+                                <div class="padding-content-course">
+                                    <div class="course-inner">
+                                        <div class="course-left">
+                                            <strong>1.Modül: </strong>
+                                        </div>
+                                        <div class="course-right">
+                                            İş sağlığı Güvenliği
+                                        </div>
                                     </div>
-                                    <div class="course-right">
-                                        İş sağlığı Güvenliği
+                                    <div class="course-inner">
+                                        <div class="course-left">
+                                            <strong>2.Modül: </strong>
+                                        </div>
+                                        <div class="course-right">
+                                            Müşteri İle İletişim
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="course-inner">
-                                    <div class="course-left">
-                                        <strong>2.Modül: </strong>
+                                    <div class="course-inner">
+                                        <div class="course-left">
+                                            <strong>2.Modül: </strong>
+                                        </div>
+                                        <div class="course-right">
+                                            Müşteri İle İletişim
+                                        </div>
                                     </div>
-                                    <div class="course-right">
-                                        Müşteri İle İletişim
-                                    </div>
-                                </div>
-                                <div class="course-inner">
-                                    <div class="course-left">
-                                        <strong>2.Modül: </strong>
-                                    </div>
-                                    <div class="course-right">
-                                        Müşteri İle İletişim
-                                    </div>
-                                </div>
-                                <div class="course-inner">
-                                    <div class="course-left">
-                                        <strong>2.Modül: </strong>
-                                    </div>
-                                    <div class="course-right">
-                                        Müşteri İle İletişim
+                                    <div class="course-inner">
+                                        <div class="course-left">
+                                            <strong>2.Modül: </strong>
+                                        </div>
+                                        <div class="course-right">
+                                            Müşteri İle İletişim
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="form-mini-divider"></div>
-                    <div class="expandable-item accordion" data-group="accordion2">
-                        <div class="expandable-header">
-                            <i class="list-icon fa fa-adjust"></i>
-                            <h3 class="list-title">Kurs Temelleri</h3>
-                            <i class="list-arrow fa fa-angle-down"></i>
-                        </div>
-                        <div class="expandable-content">
-                            <div class="padding-content-course">
-                                <div class="course-inner">
-                                    <div class="course-left">
-                                        <strong>1.Modül: </strong>
+                        <div class="form-mini-divider"></div>
+                        <div class="expandable-item accordion" data-group="accordion2">
+                            <div class="expandable-header">
+                                <i class="list-icon fa fa-adjust"></i>
+                                <h3 class="list-title">Kurs Temelleri</h3>
+                                <i class="list-arrow fa fa-angle-down"></i>
+                            </div>
+                            <div class="expandable-content">
+                                <div class="padding-content-course">
+                                    <div class="course-inner">
+                                        <div class="course-left">
+                                            <strong>1.Modül: </strong>
+                                        </div>
+                                        <div class="course-right">
+                                            İş sağlığı Güvenliği
+                                        </div>
                                     </div>
-                                    <div class="course-right">
-                                        İş sağlığı Güvenliği
+                                    <div class="course-inner">
+                                        <div class="course-left">
+                                            <strong>2.Modül: </strong>
+                                        </div>
+                                        <div class="course-right">
+                                            Müşteri İle İletişim
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="course-inner">
-                                    <div class="course-left">
-                                        <strong>2.Modül: </strong>
+                                    <div class="course-inner">
+                                        <div class="course-left">
+                                            <strong>2.Modül: </strong>
+                                        </div>
+                                        <div class="course-right">
+                                            Müşteri İle İletişim
+                                        </div>
                                     </div>
-                                    <div class="course-right">
-                                        Müşteri İle İletişim
-                                    </div>
-                                </div>
-                                <div class="course-inner">
-                                    <div class="course-left">
-                                        <strong>2.Modül: </strong>
-                                    </div>
-                                    <div class="course-right">
-                                        Müşteri İle İletişim
-                                    </div>
-                                </div>
-                                <div class="course-inner">
-                                    <div class="course-left">
-                                        <strong>2.Modül: </strong>
-                                    </div>
-                                    <div class="course-right">
-                                        Müşteri İle İletişim
+                                    <div class="course-inner">
+                                        <div class="course-left">
+                                            <strong>2.Modül: </strong>
+                                        </div>
+                                        <div class="course-right">
+                                            Müşteri İle İletişim
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="form-mini-divider"></div>
-                    <div class="expandable-item accordion" data-group="accordion2">
-                        <div class="expandable-header">
-                            <i class="list-icon fa fa-adjust"></i>
-                            <h3 class="list-title">Kurs Temelleri</h3>
-                            <i class="list-arrow fa fa-angle-down"></i>
-                        </div>
-                        <div class="expandable-content">
-                            <div class="padding-content-course">
-                                <div class="course-inner">
-                                    <div class="course-left">
-                                        <strong>1.Modül: </strong>
+                        <div class="form-mini-divider"></div>
+                        <div class="expandable-item accordion" data-group="accordion2">
+                            <div class="expandable-header">
+                                <i class="list-icon fa fa-adjust"></i>
+                                <h3 class="list-title">Kurs Temelleri</h3>
+                                <i class="list-arrow fa fa-angle-down"></i>
+                            </div>
+                            <div class="expandable-content">
+                                <div class="padding-content-course">
+                                    <div class="course-inner">
+                                        <div class="course-left">
+                                            <strong>1.Modül: </strong>
+                                        </div>
+                                        <div class="course-right">
+                                            İş sağlığı Güvenliği
+                                        </div>
                                     </div>
-                                    <div class="course-right">
-                                        İş sağlığı Güvenliği
+                                    <div class="course-inner">
+                                        <div class="course-left">
+                                            <strong>2.Modül: </strong>
+                                        </div>
+                                        <div class="course-right">
+                                            Müşteri İle İletişim
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="course-inner">
-                                    <div class="course-left">
-                                        <strong>2.Modül: </strong>
+                                    <div class="course-inner">
+                                        <div class="course-left">
+                                            <strong>2.Modül: </strong>
+                                        </div>
+                                        <div class="course-right">
+                                            Müşteri İle İletişim
+                                        </div>
                                     </div>
-                                    <div class="course-right">
-                                        Müşteri İle İletişim
-                                    </div>
-                                </div>
-                                <div class="course-inner">
-                                    <div class="course-left">
-                                        <strong>2.Modül: </strong>
-                                    </div>
-                                    <div class="course-right">
-                                        Müşteri İle İletişim
-                                    </div>
-                                </div>
-                                <div class="course-inner">
-                                    <div class="course-left">
-                                        <strong>2.Modül: </strong>
-                                    </div>
-                                    <div class="course-right">
-                                        Müşteri İle İletişim
+                                    <div class="course-inner">
+                                        <div class="course-left">
+                                            <strong>2.Modül: </strong>
+                                        </div>
+                                        <div class="course-right">
+                                            Müşteri İle İletişim
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        <div class="form-mini-divider"></div>
                     </div>
-                    <div class="form-mini-divider"></div>
                 </section>
 
                 <div class="clear"></div>
 
                 <section class="container">
-                    <div class="row " id="courseprogram">
-                        <h4 class="rbt-title-style-3 give_top">Kurs Programı</h4>
-                    </div>
+                    <div class="form-divider"></div>
+                    <div class="form-divider"></div>
+                    <div class="form-label-divider "><span>Kurs içeriği</span></div>
+                    <div class="form-divider"></div>
                     <div class="table_section">
 
                         <table>
@@ -452,6 +552,7 @@
                                 göre farlı saat ve günler uygulanabilir.</div>
                         </div>
                     </div>
+                    <div class="form-divider"></div>
                     <div class="ask-us">
                         <a href="tel:4443307" class="ask-us-item">
                             <i class="fa fa-phone" aria-hidden="true"></i>
@@ -464,9 +565,10 @@
                     </div>
                 </section>
                 <section class="container">
-                    <div class="section-head">
-                        <h4 class="title-main">BAŞARI HİKAYELERİ</h4>
-                    </div>
+                    <div class="form-divider"></div>
+                    <div class="form-divider"></div>
+                    <div class="form-label-divider " id="basarı"><span>Başarı hikayelerimiz</span></div>
+                    <div class="form-divider"></div>
                     <div class="row-haber swiper swiper-four">
                         <div class="col-10-haber swiper-wrapper">
                             <div class="swiper-slide">
@@ -597,24 +699,23 @@
                     </div>
 
                 </section>
+
+                <div class="form-divider"></div>
                 <section class="container">
-                    <div class="video-popup-wrapper">
-                        <img class="w-100 rbt-radius lozad" data-src="img/assets/video-01.jpg"
-                            alt="Kurslar ile ilgili video">
-                        <a class="rbt-btn rounded-player-2 popup-video position-to-top with-animation"
-                            href="https://www.youtube.com/watch?v=nA1Aqp0sPQo">
-                            <span class="play-icon"></span>
-                        </a>
-                    </div>
+                    <iframe class="iframe-course"
+                        src="https://www.youtube.com/embed/ebB3Q6GSTrYXV?autoplay=1&mute=1&controls=0">
+                    </iframe>
                 </section>
                 <section class="container">
-                    <div class="section-head">
-                        <h4 class="title-main title-course">Eğitimi Veren Şubeler</h4>
-                    </div>
+                    <div class="form-divider"></div>
+                    <div class="form-divider"></div>
+                    <div class="form-label-divider "><span>Şübelerimiz</span></div>
+                    <div class="form-divider"></div>
                     <div class="news-list-item no-image has-l-p">
                         <div class="list-content">
                             <p class="assign-txt">Şube:</p>
-                            <h2 class="list-title"><a href="tel:5492424273">Genel Merkez-549 242 42 73</a>
+                            <h2 class="list-title"><a href="tel:5492424273">Genel Merkez-<span class="txt-red"> 549 242
+                                        42 73 <i class="fa fa-long-arrow-left" aria-hidden="true"></i></span></a>
                             </h2>
                         </div>
                     </div>
@@ -624,7 +725,9 @@
                     <div class="news-list-item no-image has-l-p">
                         <div class="list-content">
                             <p class="assign-txt">Şube:</p>
-                            <h2 class="list-title"><a href="tel:5492424273">Antalya Şubesi-(0530) 304 98 98</a>
+                            <h2 class="list-title"><a href="tel:5492424273">Antalya Şubesi-<span class="txt-red"> 549
+                                        242
+                                        42 73 <i class="fa fa-long-arrow-left" aria-hidden="true"></i></span></a>
                             </h2>
                         </div>
                     </div>
@@ -634,7 +737,8 @@
                     <div class="news-list-item no-image has-l-p">
                         <div class="list-content">
                             <p class="assign-txt">Şube:</p>
-                            <h2 class="list-title"><a href="tel:5492424273">Mersin Şubesi-0552 455 33 40</a>
+                            <h2 class="list-title"><a href="tel:5492424273">Mersin Şubesi-<span class="txt-red"> 549 242
+                                        42 73 <i class="fa fa-long-arrow-left" aria-hidden="true"></i></span></a>
                             </h2>
                         </div>
                     </div>
@@ -643,7 +747,8 @@
                     <div class="news-list-item no-image has-l-p">
                         <div class="list-content">
                             <p class="assign-txt">Şube:</p>
-                            <h2 class="list-title"><a href="tel:5492424273">Mersin Şubesi-0552 455 33 40</a>
+                            <h2 class="list-title"><a href="tel:5492424273">Mersin Şubesi-<span class="txt-red"> 549 242
+                                        42 73 <i class="fa fa-long-arrow-left" aria-hidden="true"></i></span></a>
                             </h2>
                         </div>
                     </div>
@@ -652,7 +757,8 @@
                     <div class="news-list-item no-image has-l-p">
                         <div class="list-content">
                             <p class="assign-txt">Şube:</p>
-                            <h2 class="list-title"><a href="tel:5492424273">Bursa Şubesi-444 33 07</a>
+                            <h2 class="list-title"><a href="tel:5492424273">Bursa Şubesi-<span class="txt-red"> 549 242
+                                        42 73 <i class="fa fa-long-arrow-left" aria-hidden="true"></i></span></a>
                             </h2>
                         </div>
                     </div>
@@ -664,72 +770,74 @@
                         <div class="form-label-divider "><span>Ön Başvuru Formu</span></div>
                         <div class="form-divider"></div>
                         <div class="form-divider"></div>
+                        <div class="form-content">
+                            <div class="form-row-group with-icons">
+                                <div class="form-row no-padding">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    <input required type="text" class="form-element" placeholder="İsim Soyisim">
+                                </div>
+                            </div>
 
-                        <div class="form-row-group with-icons">
-                            <div class="form-row no-padding">
-                                <i class="fa fa-user" aria-hidden="true"></i>
-                                <input required type="text" class="form-element" placeholder="İsim Soyisim">
+                            <div class="form-mini-divider"></div>
+                            <div class="form-row-group with-icons">
+                                <div class="form-row no-padding">
+                                    <i class="fa fa-envelope"></i>
+                                    <input required type="email" class="form-element" placeholder="Email">
+                                </div>
                             </div>
-                        </div>
+                            <div class="form-mini-divider"></div>
+                            <div class="form-row-group with-icons">
+                                <div class="form-row no-padding">
+                                    <i class="fa fa-phone" aria-hidden="true"></i>
+                                    <input required type="tel" class="form-element" placeholder="Telefon">
+                                </div>
+                            </div>
+                            <div class="form-mini-divider"></div>
 
-                        <div class="form-mini-divider"></div>
-                        <div class="form-row-group with-icons">
-                            <div class="form-row no-padding">
-                                <i class="fa fa-envelope"></i>
-                                <input required type="email" class="form-element" placeholder="Email">
+                            <div class="form-row-group with-icons">
+                                <div class="form-row no-padding">
+                                    <i class="fa fa-map-o" aria-hidden="true"></i>
+                                    <select required class="form-element">
+                                        <option value="" selected>İl seç</option>
+                                        <option value="1">English</option>
+                                        <option value="1">Spanish</option>
+                                        <option value="1">Turkish</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-mini-divider"></div>
-                        <div class="form-row-group with-icons">
-                            <div class="form-row no-padding">
-                                <i class="fa fa-phone" aria-hidden="true"></i>
-                                <input required type="tel" class="form-element" placeholder="Telefon">
+                            <div class="form-mini-divider"></div>
+                            <div class="form-row-group with-icons">
+                                <div class="form-row no-padding">
+                                    <i class="fa fa-sitemap" aria-hidden="true"></i>
+                                    <select required class="form-element">
+                                        <option value="" selected>İlçe seç</option>
+                                        <option value="1">English</option>
+                                        <option value="1">Spanish</option>
+                                        <option value="1">Turkish</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-mini-divider"></div>
+                            <div class="form-mini-divider"></div>
 
-                        <div class="form-row-group with-icons">
-                            <div class="form-row no-padding">
-                                <i class="fa fa-map-o" aria-hidden="true"></i>
-                                <select required class="form-element">
-                                    <option value="" selected>İl seç</option>
-                                    <option value="1">English</option>
-                                    <option value="1">Spanish</option>
-                                    <option value="1">Turkish</option>
-                                </select>
+                            <div class="form-row-group with-icons">
+                                <div class="form-row no-padding">
+                                    <i class="fa fa-comments-o" aria-hidden="true"></i>
+                                    <textarea required class="form-element" placeholder="Mesajınız"></textarea>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-mini-divider"></div>
-                        <div class="form-row-group with-icons">
-                            <div class="form-row no-padding">
-                                <i class="fa fa-sitemap" aria-hidden="true"></i>
-                                <select required class="form-element">
-                                    <option value="" selected>İlçe seç</option>
-                                    <option value="1">English</option>
-                                    <option value="1">Spanish</option>
-                                    <option value="1">Turkish</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-mini-divider"></div>
+                            <div class="form-mini-divider"></div>
 
-                        <div class="form-row-group with-icons">
-                            <div class="form-row no-padding">
-                                <i class="fa fa-comments-o" aria-hidden="true"></i>
-                                <textarea required class="form-element" placeholder="Mesajınız"></textarea>
+                            <div class="form-row-group cont">
+                                <div class="form-row no-padding">
+                                    <label for="captcha-form-11" id="captcha-label-11"> </label>
+                                    <input type="text" placeholder='Cevab' class="form-element" name="captcha-form-11"
+                                        id="captcha-form-11" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-mini-divider"></div>
 
-                        <div class="form-row-group cont">
-                            <div class="form-row no-padding">
-                                <input type="text" placeholder='2 + 2 nedir?' class="form-element"
-                                    name="captcha-form-11" id="captcha-form-11" required>
-                            </div>
+                            <div class="form-mini-divider"></div>
+                            <button type="submit" class="button circle block orange sm-button space ">Gönder</button>
                         </div>
-
-                        <div class="form-mini-divider"></div>
-                        <button type="submit" class="button circle block orange sm-button space ">Gönder</button>
                     </form>
                 </section>
                 <section class="container">
@@ -1323,15 +1431,34 @@
         </div>
     </div>
 
-
-
-
+    <!-- modal -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="js/animatedModal.min.js"></script>
+    <script src="js/tabLeft.js"></script>
+    <script>
+        tabs.classList.add('js-tabs-init');
+    </script>
+    <!-- modal -->
     <script src="js/cap.js"></script>
     <script>
-        handleFormSubmission("form-11", "4"); 
+        function generateRandomCaptcha() {
+            const num1 = Math.floor(Math.random() * 10); // Random number between 0 and 100
+            const num2 = Math.floor(Math.random() * 10); // Another random number
+            const operators = ['+', '-', '*']; // List of operators for variety
+            const operator = operators[Math.floor(Math.random() * operators.length)]; // Random operator
+            const result = eval(`${num1} ${operator} ${num2}`); // Evaluate the expression
+
+            const captchaLabel = document.getElementById("captcha-label-11");
+            captchaLabel.textContent = `${num1} ${operator} ${num2} nedir?`;
+            return result.toString(); // Convert the result to string for comparison
+        }
+
+        const correctAnswer = generateRandomCaptcha();
+        handleFormSubmission("form-11", correctAnswer);
     </script>
     <script src="js/plyr.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+
     <script src="js/swiper.min.js"></script>
     <script src="js/lozad.js"></script>
     <script src="js/global.script.js"></script>
@@ -1339,7 +1466,6 @@
         src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script src="plugins/turbo-slider/turbo.min.js"></script>
     <script src="js/turbo-ini.js"></script>
-
 </body>
 
 </html>

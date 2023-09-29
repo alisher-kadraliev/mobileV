@@ -456,7 +456,8 @@
 
 						<div class="form-row-group cont">
 							<div class="form-row no-padding">
-								<input type="text" placeholder='2 + 2 nedir?' class="form-element"
+								<label for="captcha-form-10" id="captcha-label-10"> </label>
+								<input type="text" placeholder='Cevab' class="form-element"
 									name="captcha-form-10" id="captcha-form-10" required>
 							</div>
 						</div>
@@ -510,8 +511,22 @@
 	</div>
 	<script src="js/cap.js"></script>
 	<script>
-		handleFormSubmission("form-10", "4"); 
+	  function generateRandomCaptcha() {
+		const num1 = Math.floor(Math.random() * 10); // Random number between 0 and 100
+		const num2 = Math.floor(Math.random() * 10); // Another random number
+		const operators = ['+', '-', '*']; // List of operators for variety
+		const operator = operators[Math.floor(Math.random() * operators.length)]; // Random operator
+		const result = eval(`${num1} ${operator} ${num2}`); // Evaluate the expression
+		
+		const captchaLabel = document.getElementById("captcha-label-10");
+		captchaLabel.textContent = `${num1} ${operator} ${num2} nedir?`;
+		return result.toString(); // Convert the result to string for comparison
+	  }
+	
+	  const correctAnswer = generateRandomCaptcha();
+	  handleFormSubmission("form-10", correctAnswer);
 	</script>
+	
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 	<script src="js/swiper.min.js"></script>
 	<!-- Template global script file. requared all pages -->
