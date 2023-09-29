@@ -5476,11 +5476,13 @@ td {
 	padding: var(--box-shadow-padding);
 	box-shadow: var(--box-shadow-main);
 }
-.txt-red i{
+
+.txt-red i {
 	font-size: 15px;
-	animation: arrow-bounce 2s  infinite;
+	animation: arrow-bounce 2s infinite;
 
 }
+
 @-webkit-keyframes arrow-bounce {
 	0% {
 		transform: translateX(100%);
@@ -5489,18 +5491,21 @@ td {
 	50% {
 		transform: translateX(0%);
 	}
+
 	100% {
 		transform: translateX(100%);
 	}
 }
-#read-more-button-2{
+
+#read-more-button-2 {
 	margin-bottom: 15px;
 }
+
 #btn-close-modal {
-	width:100%;
+	width: 100%;
 	text-align: center;
-	cursor:pointer;
-	color:#fff;
+	cursor: pointer;
+	color: #fff;
 }
 
 
@@ -5537,7 +5542,7 @@ td {
 }
 
 .tabs.js-tabs.js-tabs-init .tabs-container {
-	background:  var(--color-bg) !important;
+	background: var(--color-bg) !important;
 	height: 14%;
 	transition: all .6s ease;
 }
@@ -5565,7 +5570,8 @@ td {
 .tab-item:nth-child(1) {
 	transition-delay: .1s;
 }
-.text-white{
+
+.text-white {
 	color: white;
 }
 
@@ -5674,31 +5680,80 @@ td {
 	background-color: white;
 	opacity: .6;
 }
+
 /* tableft */
-.content-left-side{
+.content-left-side {
 	position: relative;
-    overflow: hidden;
+	overflow: hidden;
 }
-.container-1{
-position: fixed;
-top: 40%;
-z-index: 500;
-}
-.button-left{
+
+.container-1 {
 	position: fixed;
-    left: -100px; /* Initial hidden position */
-    width: 100px;
-    height: 50px;
 	top: 40%;
-    background-color: #007bff;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: left 0.3s ease;
+	z-index: 500;
 }
+
+:root {
+	--size: 30px;
+}
+
+.button-left {
+	position: absolute;
+	left: 0;
+	width: 100px;
+	height: 50px;
+
+	color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: left 0.3s ease;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	font-size: 16px;
+
+	transition: background-color 0.3s ease, transform 0.1s ease;
+	/* Smooth transitions */
+}
+
+.bookmark-side {
+	position: relative; 
+    height: 47px;
+    width: 38px;
+    padding: 0px; 
+    -webkit-transform: rotate(0deg) skew(0deg); 
+    transform: rotate(270deg) skew(0deg); 
+    border-left: 25px solid red; 
+    border-right: 25px solid red; 
+    border-bottom: 25px solid transparent; 
+}
+
+
+
+.button-left:active {
+	transform: translateY(1px);
+	/* Slight downward push effect */
+}
+
 .content-left {
-    padding: 20px;
-    background-color: #f0f0f0;
+	position: absolute;
+	left: -100px;
+	/* Initial hidden position */
+	width: 65px;
+	height: 186px;
+	background-color: #f0f0f0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: left 0.3s ease;
+
+	top: -65px;
+}
+
+.nav-slide-content {
+	display: flex;
+	gap: 8px;
+	flex-direction: column;
 }
