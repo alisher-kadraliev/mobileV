@@ -411,3 +411,4 @@ function myFav() {
 	var element = document.getElementById("bookmark");
 	element.classList.toggle("active_icon");
 }	
+
