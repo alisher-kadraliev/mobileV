@@ -5699,7 +5699,7 @@ td {
   align-items: center;
   justify-content: center;
   transition: left 0.3s ease;
-  top: -101px;
+  top: -80px;
 }
 
 .nav-slide-content {
@@ -5792,13 +5792,29 @@ td {
   right: -5px;
   color: white;
   top: -5px;
-  width: 21px;
-  height: 21px;
+  width: 0;
+  height: 0px;
   display: flex;
   border-radius: 50%;
   align-items: center;
   background: red;
+  font-size: 0;
   justify-content: center;
+  animation: my-css-animation 0s ease;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+@keyframes my-css-animation {
+  0% {
+    width: 0;
+    font-size: 0;
+    height: 0;
+  }
+  100% {
+    width: 21px;
+    font-size: 18px;
+    height: 21px;
+  }
 }
 .video-content {
   position: relative;

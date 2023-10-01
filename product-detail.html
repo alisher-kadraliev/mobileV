@@ -37,7 +37,6 @@
       rel="stylesheet"
       href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css"
     />
-
   </head>
 
   <body>
@@ -160,7 +159,7 @@
             ></div>
             <div class="content-left content-left-open skeleton">
               <div class="nav-slide-content">
-                <a 
+                <a
                   href="https://api.whatsapp.com/send?phone=123123123123"
                   class="nav-slide-item add-notification"
                 >
@@ -410,7 +409,7 @@
             </button>
           </section>
           <div class="form-divider"></div>
-          <section class="container ">
+          <section class="container">
             <div class="video-popup-wrapper skeleton">
               <img
                 class="w-100 rbt-radius"
@@ -429,7 +428,14 @@
               <div id="btn-close-modal" class="close-videoModal">X</div>
               <div class="modal-content skeleton">
                 <div class="modal-content">
-                    <iframe class="video-details" src="https://www.youtube.com/embed/hwrXs51b16o?si=6vxIoXhIcmSG_dEN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <iframe
+                    class="video-details"
+                    src="https://www.youtube.com/embed/hwrXs51b16o?si=6vxIoXhIcmSG_dEN"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
                 </div>
               </div>
             </div>
@@ -851,7 +857,14 @@
               <div id="btn-close-modal" class="close-videoModal-2">X</div>
               <div class="modal-content skeleton">
                 <div class="modal-content">
-                    <iframe class="video-details" src="https://www.youtube.com/embed/hwrXs51b16o?si=6vxIoXhIcmSG_dEN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  <iframe
+                    class="video-details"
+                    src="https://www.youtube.com/embed/hwrXs51b16o?si=6vxIoXhIcmSG_dEN"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                  ></iframe>
                 </div>
               </div>
             </div>
@@ -995,7 +1008,6 @@
                       placeholder="Telefon"
                     />
                   </div>
-           
                 </div>
                 <div class="form-mini-divider"></div>
 
@@ -1836,15 +1848,15 @@
 
     <audio id="alert-audio" src="img/tones.mp3" preload="auto"></audio>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () {
           var audio = document.getElementById("alert-audio");
           if (audio) {
             audio.play();
           }
-        });
-      </script>
-      
-
+        }, 4000); // 4000 milliseconds (4 seconds)
+      });
+    </script>
 
     <!-- modal -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -1904,6 +1916,5 @@
     <script src="plugins/turbo-slider/turbo.min.js"></script>
     <script src="js/turbo-ini.js"></script>
     <script src="js/skeleton.js"></script>
-
   </body>
 </html>

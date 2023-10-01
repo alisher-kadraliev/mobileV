@@ -1844,11 +1844,13 @@
 
     <audio id="alert-audio" src="img/tones.mp3" preload="auto"></audio>
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var audio = document.getElementById("alert-audio");
-        if (audio) {
-          audio.play();
-        }
+       document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function () {
+          var audio = document.getElementById("alert-audio");
+          if (audio) {
+            audio.play();
+          }
+        }, 4000); // 4000 milliseconds (4 seconds)
       });
     </script>
 
