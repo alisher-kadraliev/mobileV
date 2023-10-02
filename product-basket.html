@@ -1,134 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 
-
-<!-- Mirrored from educom-mobile.netlify.app/mobile-temp/product-basket by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Aug 2023 12:02:59 GMT -->
-<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-	<title>Mobile Template</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+	<title>Akademi Dünyasi</title>
 
-	<!-- Google font file. If you want you can change. -->
-	<link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,900" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700;900&display=swap" rel="stylesheet" />
 
-	<!-- Fontawesome font file css -->
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.webp" />
 
-	<!-- Template global css file. Requared all pages -->
-	<link rel="stylesheet" type="text/css" href="css/global.style.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+
+	<link rel="stylesheet" type="text/css" href="css/animate.css" />
+
+	<link rel="stylesheet" type="text/css" href="css/global.style.css" />
+
+	<link rel="stylesheet" href="css/swiper.min.css" />
+	<link rel="stylesheet" href="css/plyr.css" />
+
+	<link rel="stylesheet" type="text/css" href="plugins/turbo-slider/turbo.css" />
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css" />
 </head>
 
 <body>
-	
+
 	<div class="wrapper">
 		<div class="nav-menu">
 			<nav class="menu">
-                <!-- Template logo start -->
-                <div class="nav-header">
-                    <a href='index.html'>
-                        <img class="image-round" alt="" src="img/avatar.png">
-                        <span>john doe</span>
-                        <span>johndoe@example.com</span>
-                    </a>
-                </div>
-                <!-- Template logo end -->
-                <!-- Menu navigation start -->
-                <div class="nav-container">
-                    <ul class="main-menu">
-                    	<li class="active">
-                            <a href='index.html'><img src="img/icons/i1.png" alt=""> Home</a>
-                        </li>
-                        <li>
-                            <a href='about.html'><img src="img/icons/i1.png" alt=""> About Us</a>
-                        </li>
-                        <li>
-                            <a href='student-profile.html'><img src="img/icons/i1.png" alt=""> Student Profile</a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/icons/i1.png" alt=""> Teachers <span class="fa fa-angle-down"></span></a>
-                            <ul>
-                                <li><a data-loader='show' href='all-teachers.html'>All Teachers</a></li>
-                                <li><a data-loader='show' href='teacher-profile.html'>Teacher Profile</a></li>
-                            </ul>
-                        </li>
-                        <li>
-							<a href="#"><img src="img/icons/i1.png" alt=""> Courses <span class="fa fa-angle-down"></span></a>
-							<ul>
-                                <li><a data-loader='show' href='product-list.html'>Courses List 1</a></li>
-								<li><a data-loader='show' href='product-list-2.html'>Courses List 2</a></li>
-								<li><a data-loader='show' href='product-detail.html'>Course Detail</a></li>
-								<li><a data-loader='show' href='product-basket.html'>Shopping Cart</a></li>
-							</ul>
+				<!-- Template logo start -->
+				<div class="nav-header">
+					<a href="student-profile.html">
+						<img class="image-round lozad" data-src="img/avatar.jpg" />
+						<span>Meraba Mustafa Ali</span>
+						<span class="sub__text">Tekrar hoş geldiniz</span>
+						<a class="rbt-btn-link" href="student-profile.html">Hesabım <i class="fa fa-chevron-right"
+								aria-hidden="true"></i></a>
+					</a>
+				</div>
+				<div class="nav-container">
+					<ul class="main-menu">
+						<li class="active">
+							<a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Anasayfa</a>
 						</li>
-                        <li>
-                            <a href="javascript:void(0);"><img src="img/icons/i1.png" alt=""> Login/Register <span class="fa fa-angle-down"></span></a>
-                            <ul>
-                                <li><a data-loader='show' href='login.html'>Login</a></li>
-                                <li><a data-loader='show' href='signup.html'>Register</a></li>
-                                <li><a data-loader='show' href='forgot-password.html'>Forgot Password</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/icons/i1.png" alt=""> Blog <span class="fa fa-angle-down"></span></a>
-                            <ul>
-                                <li><a data-loader='show' href='post-list-1.html'>List 1</a></li>
-                                <li><a data-loader='show' href='post-list-2.html'>List 2</a></li>
-                                <li><a data-loader='show' href='post-detail.html'>Detail</a></li>
-                                <li><a data-loader='show' href='post-author.html'>Author</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0);"><img src="img/icons/i1.png" alt=""> Wizards <span class="fa fa-angle-down"></span></a>
-                            <ul>
-                                <li><a data-loader='show' href='wizard-default.html'>Wizard Default</a></li>
-                                <li><a data-loader='show' href='wizard-fullscreen.html'>Wizard Fullscreen</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a data-loader='show' href='forms.html'><img src="img/icons/i1.png" alt=""> Form Elements</a>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/icons/i1.png" alt=""> Components <span class="fa fa-angle-down"></span></a>
-                            <ul>
-                                <li><a data-loader='show' href='tab-bottom.html'>Tab (Bottom)</a></li>
-                                <li><a data-loader='show' href='tab-top.html'>Tab (Top)</a></li>
-                                <li><a data-loader='show' href='accordion.html'>Accordion</a></li>
-                                <li><a data-loader='show' href='popup.html'>Popup Modal</a></li>
-                                <li><a data-loader='show' href='checkbox-list.html'>Check List</a></li>
-                                <li><a data-loader='show' href='link-list.html'>Link List</a></li>
-                                <li><a data-loader='show' href='link-list-two-column.html'>Two Column Links</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#"><img src="img/icons/i1.png" alt=""> Pages <span class="fa fa-angle-down"></span></a>
-                            <ul>
-                                <li><a data-loader='show' href='student-profile.html'>User Profile</a></li>
-                                <li><a data-loader='show' href='search-popup.html'>Search Popup</a></li>
-                                <li><a data-loader='show' href='search-result.html'>Search Results</a></li>
-                                <li><a data-loader='show' href='contact.html'>Contact</a></li>
-                                <li><a data-loader='show' href='blank.html'>Blank Page</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <!-- Menu navigation end -->
-            </nav>
+						<li>
+							<a href="about.html"><i class="fa fa-building" aria-hidden="true"></i>
+								Hakkımızda</a>
+						</li>
+						<li>
+							<a href="bayilik.html"><i class="fa fa-globe" aria-hidden="true"></i> Bayilik</a>
+						</li>
+						<li>
+							<a href="sinavMerkez.html"><i class="fa fa-map-marker" aria-hidden="true"></i>Sınav
+								Merkezi</a>
+						</li>
+						<li>
+							<a href="Kurslar.html"><i class="fa fa-graduation-cap" aria-hidden="true"></i>Kurslar</a>
+						</li>
+						<li>
+							<a href="post-list-1.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i>Blog</a>
+						</li>
+						<li>
+							<a href="contact.html"><i class="fa fa-volume-control-phone"
+									aria-hidden="true"></i>İletişim</a>
+						</li>
+						<ul class="rbt-dropdown-menu switcher-language">
+							<!-- <li class="has-child-menu">
+									<a href="#">
+										<img class="left-image" src="img/assets/en-us.png" alt="Language Images">
+										<span class="menu-item">English</span>
+										<i class="right-icon fa fa-chevron-down"></i>
+									</a>
+									<ul class="sub-menu">
+										<li>
+											<a href="#">
+												<img class="left-image" src="img/assets/fr.png" alt="Language Images">
+												<span class="menu-item">Français</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<img class="left-image" src="img/assets/de.png" alt="Language Images">
+												<span class="menu-item">Deutsch</span>
+											</a>
+										</li>
+									</ul>
+								</li> -->
+							<div id="google_translate_element"></div>
+						</ul>
 
+						<div class="social-share-wrapper">
+							<span class="rbt-short-title d-block">Bizimle Bulun</span>
+							<ul class="social-icon social-default transparent-with-border justify-content-start mt--20">
+								<li>
+									<a href="https://www.facebook.com/akademidunyasiekm/">
+										<i class="fa fa-facebook" aria-hidden="true"></i>
+									</a>
+								</li>
+
+								<li>
+									<a href="https://www.instagram.com/akademi_dunyasi/">
+										<i class="fa fa-instagram" aria-hidden="true"></i>
+									</a>
+								</li>
+								<li>
+									<a href="https://www.youtube.com/channel/UCUvKYFn0BE_lvFkdNWAm8JA">
+										<i class="fa fa-youtube-play" aria-hidden="true"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</ul>
+				</div>
+				<!-- Menu navigation end -->
+			</nav>
 		</div>
 		<div class="wrapper-inline">
-			<!-- Header area start -->
-			<header> <!-- extra class no-background -->
-				<a class="go-back-link" href="javascript:history.back();"><i class="fa fa-arrow-left"></i></a>
-				<h1 class="page-title">BASKET</h1>
-				<div class="navi-menu-button">
-					<em></em>
-					<em></em>
-					<em></em>
+
+
+			<header>
+				<div class="blok_head skeleton">
+					<div class="header_top">
+						<div class="header_top_content">
+							<div class="header_top_close">
+								<i class="fa fa-times" aria-hidden="true"></i>
+							</div>
+							<div class="header_top_text">
+								<strong>Buraya </strong> Kurslar ile ilgili bilgi ya kursun
+								indirim veya bildirim olabalirim bir defa sadece gösterilir
+							</div>
+						</div>
+					</div>
+					<div class="header_bottom skeleton">
+						<div class="header_bottom_left">
+							<a href="index.html">
+								<img class="header-img lozad" data-src="img/assets/logo-removebg-preview.png" alt="" />
+							</a>
+						</div>
+						<div class="header_bottom_right">
+							<div class="search-button" data-search="open">
+								<i class="fa fa-search"></i>
+							</div>
+							<div class="shoping-button">
+								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							</div>
+							<div class="navi-menu-button">
+								<em></em>
+								<em></em>
+								<em></em>
+							</div>
+						</div>
+					</div>
 				</div>
 			</header>
-			<!-- Header area end -->
-			<!-- Page content start -->
+			<div class="search-form">
+				<span class="close-search-form" data-search="close"><i class="fa fa-times"></i>
+				</span>
+				<form action="search-result.html">
+					<div class="search-input">
+						<input type="text" name="q" class="form-element" placeholder="Search..." />
+						<button type="submit" class="search-input-btn">
+							<i class="fa fa-arrow-right"></i>
+						</button>
+					</div>
+				</form>
+				<div class="recent-search">
+					<h4 class="search-group-title">Biraz önce aradınız</h4>
+					<a href="#" class="search-tag">Profesyonel Pastacılık Kursu</a>
+					<a href="#" class="search-tag">Profesyonel Aşçılık Kursu</a>
+					<a href="#" class="search-tag">Yiyecek İçecek İşletmeciliği Kursu</a>
+					<a href="#" class="search-tag">Machine Learning</a>
+					<a href="#" class="search-tag">Pidecilik Kursu</a>
+					<a href="#" class="search-tag">Dönercilik Kursu</a>
+					<a href="#" class="search-tag">Hakkımızda</a>
+				</div>
+				<div class="popular-search">
+					<h4 class="search-group-title">Popular aramalar</h4>
+					<a href="#" class="search-tag">Bayilik</a>
+					<a href="#" class="search-tag">Workshop | Hünkar Beğendi Eğitimi</a>
+					<a href="#" class="search-tag">Web Design</a>
+					<a href="#" class="search-tag">Grammer</a>
+					<a href="#" class="search-tag">Clinic</a>
+					<a href="#" class="search-tag">Business Solutions</a>
+				</div>
+			</div>
 			<main>
 				<section class="container">
 
@@ -136,91 +194,109 @@
 					<!--expendable list item -->
 					<div class="expandable-item accordion" data-group="accordion1">
 						<div class="expandable-header">
-							<h3 class="list-title">Advanced HTML Course</h3>
+							<h3 class="list-title">Güzellik Kursu</h3>
 							<i class="list-arrow fa fa-angle-down"></i>
 						</div>
 						<div class="expandable-content">
 							<div class="padding-content">
 								<img src="img/product/course1.png" alt="">
-								
+
 								<div class="form-mini-divider"></div>
-								<p class="mb-15">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took </p>
+								<p class="mb-15">Lorem Ipsum is simply dummy text of the printing and typesetting
+									industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+									1500s, when an unknown printer took </p>
 
-			                	<div class="section-head">
-			                        <h4 class="title-main">Course Content</h4>
-			                        <a class="c-btn" href="#">more</a>
-			                    </div>
+								<div class="section-head">
+									<h4 class="title-main">Course Content</h4>
+									<a class="c-btn" href="#">more</a>
+								</div>
 
-			                    <div>
-			                        <ul class="courses-list list-unstyled mb-0">
-			                            <li>
-			                                <a href="#" class="d-flex align-items-center justify-content-between">
-			                                    <div class="d-flex align-items-center">
-			                                        <img class="img-xs" src="img/product/con1.png" alt="Course image">
-			                                        <div class="ml-10">
-			                                          <h4 class="courses-name">Pronunciation Gudience</h4>
-			                                          <small class="text-muted c-period"><i class="fa fa-clock-o mr-1"></i> 3 Hours</small>
-			                                        </div>
-			                                      </div>
-			                                    </a><div><a href="#" class="d-flex align-items-center justify-content-between">
-			                                        </a><div class="d-block"><a href="#" class="d-flex align-items-center justify-content-between">
-			                                            </a><a href="#" class="c-fav"><i class="fa fa-heart"></i> </a>
-			                                        </div>
-			                                    </div>
-			                                
-			                            </li>
-			                            <li class="s5-bg">
-			                                <a href="#" class="d-flex align-items-center justify-content-between">
-			                                    <div class="d-flex align-items-center">
-			                                        <img class="img-xs" src="img/product/con2.png" alt="Course image">
-			                                        <div class="ml-10">
-			                                          <h4 class="courses-name">Common Conversation</h4>
-			                                          <small class="text-muted c-period"><i class="fa fa-clock-o mr-1"></i> 3 Hours</small>
-			                                        </div>
-			                                      </div>
-			                                    </a><div><a href="#" class="d-flex align-items-center justify-content-between">
-			                                        </a><div class="d-block"><a href="#" class="d-flex align-items-center justify-content-between">
-			                                            </a><a href="#" class="c-fav v2"><i class="fa fa-heart"></i> </a>
-			                                        </div>
-			                                    </div>
-			                                
-			                            </li>
-			                            <li>
-			                                <a href="#" class="d-flex align-items-center justify-content-between">
-			                                    <div class="d-flex align-items-center">
-			                                        <img class="img-xs" src="img/product/con3.png" alt="Course image">
-			                                        <div class="ml-10">
-			                                          <h4 class="courses-name">Most Searching Words</h4>
-			                                          <small class="text-muted c-period"><i class="fa fa-clock-o mr-1"></i> 3 Hours</small>
-			                                        </div>
-			                                      </div>
-			                                    </a><div><a href="#" class="d-flex align-items-center justify-content-between">
-			                                        </a><div class="d-block"><a href="#" class="d-flex align-items-center justify-content-between">
-			                                            </a><a href="#" class="c-fav"><i class="fa fa-heart"></i> </a>
-			                                        </div>
-			                                    </div>
-			                                
-			                            </li>
-			                            <li>
-			                                <a href="#" class="d-flex align-items-center justify-content-between">
-			                                    <div class="d-flex align-items-center">
-			                                        <img class="img-xs" src="img/product/con4.png" alt="Course image">
-			                                        <div class="ml-10">
-			                                          <h4 class="courses-name">50 Press and Idioms</h4>
-			                                          <small class="text-muted c-period"><i class="fa fa-clock-o mr-1"></i> 3 Hours</small>
-			                                        </div>
-			                                      </div>
-			                                    </a><div><a href="#" class="d-flex align-items-center justify-content-between">
-			                                        </a><div class="d-block"><a href="#" class="d-flex align-items-center justify-content-between">
-			                                            </a><a href="#" class="c-fav"><i class="fa fa-heart"></i> </a>
-			                                        </div>
-			                                    </div>
-			                                
-			                            </li>
-			                        </ul>
-			                    	
+								<div>
+									<ul class="courses-list list-unstyled mb-0">
+										<li>
+											<a href="#" class="d-flex align-items-center justify-content-between">
+												<div class="d-flex align-items-center">
+													<img class="img-xs" src="img/product/con1.png" alt="Course image">
+													<div class="ml-10">
+														<h4 class="courses-name">Pronunciation Gudience</h4>
+														<small class="text-muted c-period"><i
+																class="fa fa-clock-o mr-1"></i> 3 Hours</small>
+													</div>
+												</div>
+											</a>
+											<div><a href="#" class="d-flex align-items-center justify-content-between">
+												</a>
+												<div class="d-block"><a href="#"
+														class="d-flex align-items-center justify-content-between">
+													</a><a href="#" class="c-fav"><i class="fa fa-heart"></i> </a>
+												</div>
+											</div>
 
-			                    </div>
+										</li>
+										<li class="s5-bg">
+											<a href="#" class="d-flex align-items-center justify-content-between">
+												<div class="d-flex align-items-center">
+													<img class="img-xs" src="img/product/con2.png" alt="Course image">
+													<div class="ml-10">
+														<h4 class="courses-name">Common Conversation</h4>
+														<small class="text-muted c-period"><i
+																class="fa fa-clock-o mr-1"></i> 3 Hours</small>
+													</div>
+												</div>
+											</a>
+											<div><a href="#" class="d-flex align-items-center justify-content-between">
+												</a>
+												<div class="d-block"><a href="#"
+														class="d-flex align-items-center justify-content-between">
+													</a><a href="#" class="c-fav v2"><i class="fa fa-heart"></i> </a>
+												</div>
+											</div>
+
+										</li>
+										<li>
+											<a href="#" class="d-flex align-items-center justify-content-between">
+												<div class="d-flex align-items-center">
+													<img class="img-xs" src="img/product/con3.png" alt="Course image">
+													<div class="ml-10">
+														<h4 class="courses-name">Most Searching Words</h4>
+														<small class="text-muted c-period"><i
+																class="fa fa-clock-o mr-1"></i> 3 Hours</small>
+													</div>
+												</div>
+											</a>
+											<div><a href="#" class="d-flex align-items-center justify-content-between">
+												</a>
+												<div class="d-block"><a href="#"
+														class="d-flex align-items-center justify-content-between">
+													</a><a href="#" class="c-fav"><i class="fa fa-heart"></i> </a>
+												</div>
+											</div>
+
+										</li>
+										<li>
+											<a href="#" class="d-flex align-items-center justify-content-between">
+												<div class="d-flex align-items-center">
+													<img class="img-xs" src="img/product/con4.png" alt="Course image">
+													<div class="ml-10">
+														<h4 class="courses-name">50 Press and Idioms</h4>
+														<small class="text-muted c-period"><i
+																class="fa fa-clock-o mr-1"></i> 3 Hours</small>
+													</div>
+												</div>
+											</a>
+											<div><a href="#" class="d-flex align-items-center justify-content-between">
+												</a>
+												<div class="d-block"><a href="#"
+														class="d-flex align-items-center justify-content-between">
+													</a><a href="#" class="c-fav"><i class="fa fa-heart"></i> </a>
+												</div>
+											</div>
+
+										</li>
+									</ul>
+
+
+								</div>
 
 							</div>
 						</div>
@@ -231,91 +307,109 @@
 					<div class="expandable-item accordion" data-group="accordion1">
 						<div class="expandable-header">
 
-							<h3 class="list-title">Essential CSS Course</h3>
+							<h3 class="list-title">Aşçılık Kursu</h3>
 							<i class="list-arrow fa fa-angle-down"></i>
 						</div>
 						<div class="expandable-content">
 							<div class="padding-content">
 								<img src="img/product/course2.png" alt="">
-								
+
 								<div class="form-mini-divider"></div>
-								<p class="mb-15">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took </p>
+								<p class="mb-15">Lorem Ipsum is simply dummy text of the printing and typesetting
+									industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+									1500s, when an unknown printer took </p>
 
-			                	<div class="section-head">
-			                        <h4 class="title-main">Course Content</h4>
-			                        <a class="c-btn" href="#">more</a>
-			                    </div>
+								<div class="section-head">
+									<h4 class="title-main">Course Content</h4>
+									<a class="c-btn" href="#">more</a>
+								</div>
 
-			                    <div>
-			                        <ul class="courses-list list-unstyled mb-0">
-			                            <li>
-			                                <a href="#" class="d-flex align-items-center justify-content-between">
-			                                    <div class="d-flex align-items-center">
-			                                        <img class="img-xs" src="img/product/con1.png" alt="Course image">
-			                                        <div class="ml-10">
-			                                          <h4 class="courses-name">Pronunciation Gudience</h4>
-			                                          <small class="text-muted c-period"><i class="fa fa-clock-o mr-1"></i> 3 Hours</small>
-			                                        </div>
-			                                      </div>
-			                                    </a><div><a href="#" class="d-flex align-items-center justify-content-between">
-			                                        </a><div class="d-block"><a href="#" class="d-flex align-items-center justify-content-between">
-			                                            </a><a href="#" class="c-fav"><i class="fa fa-heart"></i> </a>
-			                                        </div>
-			                                    </div>
-			                                
-			                            </li>
-			                            <li class="s5-bg">
-			                                <a href="#" class="d-flex align-items-center justify-content-between">
-			                                    <div class="d-flex align-items-center">
-			                                        <img class="img-xs" src="img/product/con2.png" alt="Course image">
-			                                        <div class="ml-10">
-			                                          <h4 class="courses-name">Common Conversation</h4>
-			                                          <small class="text-muted c-period"><i class="fa fa-clock-o mr-1"></i> 3 Hours</small>
-			                                        </div>
-			                                      </div>
-			                                    </a><div><a href="#" class="d-flex align-items-center justify-content-between">
-			                                        </a><div class="d-block"><a href="#" class="d-flex align-items-center justify-content-between">
-			                                            </a><a href="#" class="c-fav v2"><i class="fa fa-heart"></i> </a>
-			                                        </div>
-			                                    </div>
-			                                
-			                            </li>
-			                            <li>
-			                                <a href="#" class="d-flex align-items-center justify-content-between">
-			                                    <div class="d-flex align-items-center">
-			                                        <img class="img-xs" src="img/product/con3.png" alt="Course image">
-			                                        <div class="ml-10">
-			                                          <h4 class="courses-name">Most Searching Words</h4>
-			                                          <small class="text-muted c-period"><i class="fa fa-clock-o mr-1"></i> 3 Hours</small>
-			                                        </div>
-			                                      </div>
-			                                    </a><div><a href="#" class="d-flex align-items-center justify-content-between">
-			                                        </a><div class="d-block"><a href="#" class="d-flex align-items-center justify-content-between">
-			                                            </a><a href="#" class="c-fav"><i class="fa fa-heart"></i> </a>
-			                                        </div>
-			                                    </div>
-			                                
-			                            </li>
-			                            <li>
-			                                <a href="#" class="d-flex align-items-center justify-content-between">
-			                                    <div class="d-flex align-items-center">
-			                                        <img class="img-xs" src="img/product/con4.png" alt="Course image">
-			                                        <div class="ml-10">
-			                                          <h4 class="courses-name">50 Press and Idioms</h4>
-			                                          <small class="text-muted c-period"><i class="fa fa-clock-o mr-1"></i> 3 Hours</small>
-			                                        </div>
-			                                      </div>
-			                                    </a><div><a href="#" class="d-flex align-items-center justify-content-between">
-			                                        </a><div class="d-block"><a href="#" class="d-flex align-items-center justify-content-between">
-			                                            </a><a href="#" class="c-fav"><i class="fa fa-heart"></i> </a>
-			                                        </div>
-			                                    </div>
-			                                
-			                            </li>
-			                        </ul>
-			                    	
+								<div>
+									<ul class="courses-list list-unstyled mb-0">
+										<li>
+											<a href="#" class="d-flex align-items-center justify-content-between">
+												<div class="d-flex align-items-center">
+													<img class="img-xs" src="img/product/con1.png" alt="Course image">
+													<div class="ml-10">
+														<h4 class="courses-name">Pronunciation Gudience</h4>
+														<small class="text-muted c-period"><i
+																class="fa fa-clock-o mr-1"></i> 3 Hours</small>
+													</div>
+												</div>
+											</a>
+											<div><a href="#" class="d-flex align-items-center justify-content-between">
+												</a>
+												<div class="d-block"><a href="#"
+														class="d-flex align-items-center justify-content-between">
+													</a><a href="#" class="c-fav"><i class="fa fa-heart"></i> </a>
+												</div>
+											</div>
 
-			                    </div>
+										</li>
+										<li class="s5-bg">
+											<a href="#" class="d-flex align-items-center justify-content-between">
+												<div class="d-flex align-items-center">
+													<img class="img-xs" src="img/product/con2.png" alt="Course image">
+													<div class="ml-10">
+														<h4 class="courses-name">Common Conversation</h4>
+														<small class="text-muted c-period"><i
+																class="fa fa-clock-o mr-1"></i> 3 Hours</small>
+													</div>
+												</div>
+											</a>
+											<div><a href="#" class="d-flex align-items-center justify-content-between">
+												</a>
+												<div class="d-block"><a href="#"
+														class="d-flex align-items-center justify-content-between">
+													</a><a href="#" class="c-fav v2"><i class="fa fa-heart"></i> </a>
+												</div>
+											</div>
+
+										</li>
+										<li>
+											<a href="#" class="d-flex align-items-center justify-content-between">
+												<div class="d-flex align-items-center">
+													<img class="img-xs" src="img/product/con3.png" alt="Course image">
+													<div class="ml-10">
+														<h4 class="courses-name">Most Searching Words</h4>
+														<small class="text-muted c-period"><i
+																class="fa fa-clock-o mr-1"></i> 3 Hours</small>
+													</div>
+												</div>
+											</a>
+											<div><a href="#" class="d-flex align-items-center justify-content-between">
+												</a>
+												<div class="d-block"><a href="#"
+														class="d-flex align-items-center justify-content-between">
+													</a><a href="#" class="c-fav"><i class="fa fa-heart"></i> </a>
+												</div>
+											</div>
+
+										</li>
+										<li>
+											<a href="#" class="d-flex align-items-center justify-content-between">
+												<div class="d-flex align-items-center">
+													<img class="img-xs" src="img/product/con4.png" alt="Course image">
+													<div class="ml-10">
+														<h4 class="courses-name">50 Press and Idioms</h4>
+														<small class="text-muted c-period"><i
+																class="fa fa-clock-o mr-1"></i> 3 Hours</small>
+													</div>
+												</div>
+											</a>
+											<div><a href="#" class="d-flex align-items-center justify-content-between">
+												</a>
+												<div class="d-block"><a href="#"
+														class="d-flex align-items-center justify-content-between">
+													</a><a href="#" class="c-fav"><i class="fa fa-heart"></i> </a>
+												</div>
+											</div>
+
+										</li>
+									</ul>
+
+
+								</div>
 
 							</div>
 						</div>
@@ -325,91 +419,109 @@
 					<!--expendable list item -->
 					<div class="expandable-item accordion" data-group="accordion1">
 						<div class="expandable-header">
-							<h3 class="list-title">Bootstrap Course</h3>
+							<h3 class="list-title">MYK</h3>
 							<i class="list-arrow fa fa-angle-down"></i>
 						</div>
 						<div class="expandable-content">
 							<div class="padding-content">
 								<img src="img/product/course3.png" alt="">
-								
+
 								<div class="form-mini-divider"></div>
-								<p class="mb-15">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took </p>
+								<p class="mb-15">Lorem Ipsum is simply dummy text of the printing and typesetting
+									industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+									1500s, when an unknown printer took </p>
 
-			                	<div class="section-head">
-			                        <h4 class="title-main">Course Content</h4>
-			                        <a class="c-btn" href="#">more</a>
-			                    </div>
+								<div class="section-head">
+									<h4 class="title-main">Course Content</h4>
+									<a class="c-btn" href="#">more</a>
+								</div>
 
-			                    <div>
-			                        <ul class="courses-list list-unstyled mb-0">
-			                            <li>
-			                                <a href="#" class="d-flex align-items-center justify-content-between">
-			                                    <div class="d-flex align-items-center">
-			                                        <img class="img-xs" src="img/product/con1.png" alt="Course image">
-			                                        <div class="ml-10">
-			                                          <h4 class="courses-name">Pronunciation Gudience</h4>
-			                                          <small class="text-muted c-period"><i class="fa fa-clock-o mr-1"></i> 3 Hours</small>
-			                                        </div>
-			                                      </div>
-			                                    </a><div><a href="#" class="d-flex align-items-center justify-content-between">
-			                                        </a><div class="d-block"><a href="#" class="d-flex align-items-center justify-content-between">
-			                                            </a><a href="#" class="c-fav"><i class="fa fa-heart"></i> </a>
-			                                        </div>
-			                                    </div>
-			                                
-			                            </li>
-			                            <li class="s5-bg">
-			                                <a href="#" class="d-flex align-items-center justify-content-between">
-			                                    <div class="d-flex align-items-center">
-			                                        <img class="img-xs" src="img/product/con2.png" alt="Course image">
-			                                        <div class="ml-10">
-			                                          <h4 class="courses-name">Common Conversation</h4>
-			                                          <small class="text-muted c-period"><i class="fa fa-clock-o mr-1"></i> 3 Hours</small>
-			                                        </div>
-			                                      </div>
-			                                    </a><div><a href="#" class="d-flex align-items-center justify-content-between">
-			                                        </a><div class="d-block"><a href="#" class="d-flex align-items-center justify-content-between">
-			                                            </a><a href="#" class="c-fav v2"><i class="fa fa-heart"></i> </a>
-			                                        </div>
-			                                    </div>
-			                                
-			                            </li>
-			                            <li>
-			                                <a href="#" class="d-flex align-items-center justify-content-between">
-			                                    <div class="d-flex align-items-center">
-			                                        <img class="img-xs" src="img/product/con3.png" alt="Course image">
-			                                        <div class="ml-10">
-			                                          <h4 class="courses-name">Most Searching Words</h4>
-			                                          <small class="text-muted c-period"><i class="fa fa-clock-o mr-1"></i> 3 Hours</small>
-			                                        </div>
-			                                      </div>
-			                                    </a><div><a href="#" class="d-flex align-items-center justify-content-between">
-			                                        </a><div class="d-block"><a href="#" class="d-flex align-items-center justify-content-between">
-			                                            </a><a href="#" class="c-fav"><i class="fa fa-heart"></i> </a>
-			                                        </div>
-			                                    </div>
-			                                
-			                            </li>
-			                            <li>
-			                                <a href="#" class="d-flex align-items-center justify-content-between">
-			                                    <div class="d-flex align-items-center">
-			                                        <img class="img-xs" src="img/product/con4.png" alt="Course image">
-			                                        <div class="ml-10">
-			                                          <h4 class="courses-name">50 Press and Idioms</h4>
-			                                          <small class="text-muted c-period"><i class="fa fa-clock-o mr-1"></i> 3 Hours</small>
-			                                        </div>
-			                                      </div>
-			                                    </a><div><a href="#" class="d-flex align-items-center justify-content-between">
-			                                        </a><div class="d-block"><a href="#" class="d-flex align-items-center justify-content-between">
-			                                            </a><a href="#" class="c-fav"><i class="fa fa-heart"></i> </a>
-			                                        </div>
-			                                    </div>
-			                                
-			                            </li>
-			                        </ul>
-			                    	
+								<div>
+									<ul class="courses-list list-unstyled mb-0">
+										<li>
+											<a href="#" class="d-flex align-items-center justify-content-between">
+												<div class="d-flex align-items-center">
+													<img class="img-xs" src="img/product/con1.png" alt="Course image">
+													<div class="ml-10">
+														<h4 class="courses-name">Pronunciation Gudience</h4>
+														<small class="text-muted c-period"><i
+																class="fa fa-clock-o mr-1"></i> 3 Hours</small>
+													</div>
+												</div>
+											</a>
+											<div><a href="#" class="d-flex align-items-center justify-content-between">
+												</a>
+												<div class="d-block"><a href="#"
+														class="d-flex align-items-center justify-content-between">
+													</a><a href="#" class="c-fav"><i class="fa fa-heart"></i> </a>
+												</div>
+											</div>
 
-			                    </div>
+										</li>
+										<li class="s5-bg">
+											<a href="#" class="d-flex align-items-center justify-content-between">
+												<div class="d-flex align-items-center">
+													<img class="img-xs" src="img/product/con2.png" alt="Course image">
+													<div class="ml-10">
+														<h4 class="courses-name">Common Conversation</h4>
+														<small class="text-muted c-period"><i
+																class="fa fa-clock-o mr-1"></i> 3 Hours</small>
+													</div>
+												</div>
+											</a>
+											<div><a href="#" class="d-flex align-items-center justify-content-between">
+												</a>
+												<div class="d-block"><a href="#"
+														class="d-flex align-items-center justify-content-between">
+													</a><a href="#" class="c-fav v2"><i class="fa fa-heart"></i> </a>
+												</div>
+											</div>
+
+										</li>
+										<li>
+											<a href="#" class="d-flex align-items-center justify-content-between">
+												<div class="d-flex align-items-center">
+													<img class="img-xs" src="img/product/con3.png" alt="Course image">
+													<div class="ml-10">
+														<h4 class="courses-name">Most Searching Words</h4>
+														<small class="text-muted c-period"><i
+																class="fa fa-clock-o mr-1"></i> 3 Hours</small>
+													</div>
+												</div>
+											</a>
+											<div><a href="#" class="d-flex align-items-center justify-content-between">
+												</a>
+												<div class="d-block"><a href="#"
+														class="d-flex align-items-center justify-content-between">
+													</a><a href="#" class="c-fav"><i class="fa fa-heart"></i> </a>
+												</div>
+											</div>
+
+										</li>
+										<li>
+											<a href="#" class="d-flex align-items-center justify-content-between">
+												<div class="d-flex align-items-center">
+													<img class="img-xs" src="img/product/con4.png" alt="Course image">
+													<div class="ml-10">
+														<h4 class="courses-name">50 Press and Idioms</h4>
+														<small class="text-muted c-period"><i
+																class="fa fa-clock-o mr-1"></i> 3 Hours</small>
+													</div>
+												</div>
+											</a>
+											<div><a href="#" class="d-flex align-items-center justify-content-between">
+												</a>
+												<div class="d-block"><a href="#"
+														class="d-flex align-items-center justify-content-between">
+													</a><a href="#" class="c-fav"><i class="fa fa-heart"></i> </a>
+												</div>
+											</div>
+
+										</li>
+									</ul>
+
+
+								</div>
 
 							</div>
 						</div>
@@ -419,91 +531,109 @@
 					<!--expendable list item -->
 					<div class="expandable-item accordion" data-group="accordion1">
 						<div class="expandable-header">
-							<h3 class="list-title">Angular Course</h3>
+							<h3 class="list-title">Üniversite hazırlık</h3>
 							<i class="list-arrow fa fa-angle-down"></i>
 						</div>
 						<div class="expandable-content">
 							<div class="padding-content">
 								<img src="img/product/course4.png" alt="">
-								
+
 								<div class="form-mini-divider"></div>
-								<p class="mb-15">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took </p>
+								<p class="mb-15">Lorem Ipsum is simply dummy text of the printing and typesetting
+									industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+									1500s, when an unknown printer took </p>
 
-			                	<div class="section-head">
-			                        <h4 class="title-main">Course Content</h4>
-			                        <a class="c-btn" href="#">more</a>
-			                    </div>
+								<div class="section-head">
+									<h4 class="title-main">Course Content</h4>
+									<a class="c-btn" href="#">more</a>
+								</div>
 
-			                    <div>
-			                        <ul class="courses-list list-unstyled mb-0">
-			                            <li>
-			                                <a href="#" class="d-flex align-items-center justify-content-between">
-			                                    <div class="d-flex align-items-center">
-			                                        <img class="img-xs" src="img/product/con1.png" alt="Course image">
-			                                        <div class="ml-10">
-			                                          <h4 class="courses-name">Pronunciation Gudience</h4>
-			                                          <small class="text-muted c-period"><i class="fa fa-clock-o mr-1"></i> 3 Hours</small>
-			                                        </div>
-			                                      </div>
-			                                    </a><div><a href="#" class="d-flex align-items-center justify-content-between">
-			                                        </a><div class="d-block"><a href="#" class="d-flex align-items-center justify-content-between">
-			                                            </a><a href="#" class="c-fav"><i class="fa fa-heart"></i> </a>
-			                                        </div>
-			                                    </div>
-			                                
-			                            </li>
-			                            <li class="s5-bg">
-			                                <a href="#" class="d-flex align-items-center justify-content-between">
-			                                    <div class="d-flex align-items-center">
-			                                        <img class="img-xs" src="img/product/con2.png" alt="Course image">
-			                                        <div class="ml-10">
-			                                          <h4 class="courses-name">Common Conversation</h4>
-			                                          <small class="text-muted c-period"><i class="fa fa-clock-o mr-1"></i> 3 Hours</small>
-			                                        </div>
-			                                      </div>
-			                                    </a><div><a href="#" class="d-flex align-items-center justify-content-between">
-			                                        </a><div class="d-block"><a href="#" class="d-flex align-items-center justify-content-between">
-			                                            </a><a href="#" class="c-fav v2"><i class="fa fa-heart"></i> </a>
-			                                        </div>
-			                                    </div>
-			                                
-			                            </li>
-			                            <li>
-			                                <a href="#" class="d-flex align-items-center justify-content-between">
-			                                    <div class="d-flex align-items-center">
-			                                        <img class="img-xs" src="img/product/con3.png" alt="Course image">
-			                                        <div class="ml-10">
-			                                          <h4 class="courses-name">Most Searching Words</h4>
-			                                          <small class="text-muted c-period"><i class="fa fa-clock-o mr-1"></i> 3 Hours</small>
-			                                        </div>
-			                                      </div>
-			                                    </a><div><a href="#" class="d-flex align-items-center justify-content-between">
-			                                        </a><div class="d-block"><a href="#" class="d-flex align-items-center justify-content-between">
-			                                            </a><a href="#" class="c-fav"><i class="fa fa-heart"></i> </a>
-			                                        </div>
-			                                    </div>
-			                                
-			                            </li>
-			                            <li>
-			                                <a href="#" class="d-flex align-items-center justify-content-between">
-			                                    <div class="d-flex align-items-center">
-			                                        <img class="img-xs" src="img/product/con4.png" alt="Course image">
-			                                        <div class="ml-10">
-			                                          <h4 class="courses-name">50 Press and Idioms</h4>
-			                                          <small class="text-muted c-period"><i class="fa fa-clock-o mr-1"></i> 3 Hours</small>
-			                                        </div>
-			                                      </div>
-			                                    </a><div><a href="#" class="d-flex align-items-center justify-content-between">
-			                                        </a><div class="d-block"><a href="#" class="d-flex align-items-center justify-content-between">
-			                                            </a><a href="#" class="c-fav"><i class="fa fa-heart"></i> </a>
-			                                        </div>
-			                                    </div>
-			                                
-			                            </li>
-			                        </ul>
-			                    	
+								<div>
+									<ul class="courses-list list-unstyled mb-0">
+										<li>
+											<a href="#" class="d-flex align-items-center justify-content-between">
+												<div class="d-flex align-items-center">
+													<img class="img-xs" src="img/product/con1.png" alt="Course image">
+													<div class="ml-10">
+														<h4 class="courses-name">Pronunciation Gudience</h4>
+														<small class="text-muted c-period"><i
+																class="fa fa-clock-o mr-1"></i> 3 Hours</small>
+													</div>
+												</div>
+											</a>
+											<div><a href="#" class="d-flex align-items-center justify-content-between">
+												</a>
+												<div class="d-block"><a href="#"
+														class="d-flex align-items-center justify-content-between">
+													</a><a href="#" class="c-fav"><i class="fa fa-heart"></i> </a>
+												</div>
+											</div>
 
-			                    </div>
+										</li>
+										<li class="s5-bg">
+											<a href="#" class="d-flex align-items-center justify-content-between">
+												<div class="d-flex align-items-center">
+													<img class="img-xs" src="img/product/con2.png" alt="Course image">
+													<div class="ml-10">
+														<h4 class="courses-name">Common Conversation</h4>
+														<small class="text-muted c-period"><i
+																class="fa fa-clock-o mr-1"></i> 3 Hours</small>
+													</div>
+												</div>
+											</a>
+											<div><a href="#" class="d-flex align-items-center justify-content-between">
+												</a>
+												<div class="d-block"><a href="#"
+														class="d-flex align-items-center justify-content-between">
+													</a><a href="#" class="c-fav v2"><i class="fa fa-heart"></i> </a>
+												</div>
+											</div>
+
+										</li>
+										<li>
+											<a href="#" class="d-flex align-items-center justify-content-between">
+												<div class="d-flex align-items-center">
+													<img class="img-xs" src="img/product/con3.png" alt="Course image">
+													<div class="ml-10">
+														<h4 class="courses-name">Most Searching Words</h4>
+														<small class="text-muted c-period"><i
+																class="fa fa-clock-o mr-1"></i> 3 Hours</small>
+													</div>
+												</div>
+											</a>
+											<div><a href="#" class="d-flex align-items-center justify-content-between">
+												</a>
+												<div class="d-block"><a href="#"
+														class="d-flex align-items-center justify-content-between">
+													</a><a href="#" class="c-fav"><i class="fa fa-heart"></i> </a>
+												</div>
+											</div>
+
+										</li>
+										<li>
+											<a href="#" class="d-flex align-items-center justify-content-between">
+												<div class="d-flex align-items-center">
+													<img class="img-xs" src="img/product/con4.png" alt="Course image">
+													<div class="ml-10">
+														<h4 class="courses-name">50 Press and Idioms</h4>
+														<small class="text-muted c-period"><i
+																class="fa fa-clock-o mr-1"></i> 3 Hours</small>
+													</div>
+												</div>
+											</a>
+											<div><a href="#" class="d-flex align-items-center justify-content-between">
+												</a>
+												<div class="d-block"><a href="#"
+														class="d-flex align-items-center justify-content-between">
+													</a><a href="#" class="c-fav"><i class="fa fa-heart"></i> </a>
+												</div>
+											</div>
+
+										</li>
+									</ul>
+
+
+								</div>
 
 							</div>
 						</div>
@@ -511,19 +641,20 @@
 					<!--expendable list item -->
 
 					<div class="form-mini-divider"></div>
-					<a href="#" class="button circle block orange"><i class="fa fa-shopping-basket"></i> Checkout</a>
+					<a href="#" class="button circle block orange"><i class="fa fa-shopping-basket"></i> Satın al</a>
 					<div class="form-mini-divider"></div>
 
 					<div class="form-divider"></div>
-					<div class="form-label-divider"><span>OR</span></div>
+					<div class="form-label-divider"><span>VEYA</span></div>
 					<div class="form-divider"></div>
 
 					<div class="txt-center">
-						<a class='mb-15 d-block' href='product-list.html'>Continue shopping <i class="fa fa-arrow-right"></i></a>
+						<a class='mb-15 d-block' href='product-list.html'>Satış etmeyi devam et <i
+								class="fa fa-arrow-right"></i></a>
 					</div>
 
 
-					
+
 
 				</section>
 			</main>
@@ -532,25 +663,19 @@
 	</div>
 
 
-	<!--Page loader DOM Elements. Requared all pages-->
-	<div class="sweet-loader">
-		<div class="box">
-		  	<div class="circle1"></div>
-		  	<div class="circle2"></div>
-		  	<div class="circle3"></div>
-		</div>
-	</div>
 
-	<!-- JQuery library file. requared all pages -->
-	<script src="js/jquery-3.2.1.min.js"></script>
-
-	<!-- Template global script file. requared all pages -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/plyr.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/lozad.js"></script>
 	<script src="js/global.script.js"></script>
-
-	
+	<script type="text/javascript"
+		src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	<script src="plugins/turbo-slider/turbo.min.js"></script>
+	<script src="js/turbo-ini.js"></script>
+	<script src="js/popUp.js"></script>
+	<script src="js/skeleton.js"></script>
 </body>
 
-
-
-<!-- Mirrored from educom-mobile.netlify.app/mobile-temp/product-basket by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 09 Aug 2023 12:02:59 GMT -->
 </html>
